@@ -1,0 +1,159 @@
+I"]3<main role="main" class="container-sm" style="max-width: 1080px">
+    <div class="row">
+        <div class="col">
+            <p class="h1 mt-5 page-title">
+                <img class="profile-img-small d-md-none" src="/assets/profile.jpg" />
+                <span style="clear: right"><strong>Quang Nguyen</strong></span>
+            </p>
+            <p class="h4 section-title" style="clear: right"><strong>About</strong></p>
+            
+            <p><p>I am a Research Resident at <a href="https://vinai.io/">VinAI Research</a>, advised by <a href="https://khoinguyen.org">Dr. Khoi Nguyen</a>. I am also the last-year undergraduate student at <a href="https://hcmut.edu.vn/en">Ho Chi Minh City University of Technology</a> in Vietnam, where I had the privilege of being supervised by <a href="https://scholar.google.com/citations?user=xV7uHJgAAAAJ&amp;hl=en">Dr. Dung Nguyen</a> during my undergraduate studies. My research focus involves developing algorithms for generative models (diffusion models and multi-modal LLMs), and trustworthy GenAI to enhance the safety of these models for end-users.</p>
+</p>
+            <a href="mailto:quangngcs@gmail.com">Email</a> / 
+            <a href="https://scholar.google.com/citations?user=dqgmViUAAAAJ&amp;hl=vi">Google Scholar</a> / 
+            <a href="https://github.com/quang-ngh">Github</a> /
+            <a href="https://github.com/quang-ngh">CV</a>
+        </div>
+        <div class="col-auto d-none d-md-block">
+            <img class="profile-img" src="/assets/profile.jpg" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <p class="note">
+                <b>
+                    I am actively looking for Ph.D. position in Computer Science in the upcoming academic year.
+                </b>
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <p class="h4 section-title"><strong>Publications</strong> <span class="h6"></span></p>
+            <div class="container-fluid" style="padding: 0;">
+                
+                
+                <div class="row" style="padding: 0.25rem 0">
+                    <div class="col">
+                        <p class="h5 publication-title">EditScout: Locating Forged Regions from Diffusion-based Edited Images with Multimodal LLM</p>
+                        <span class="publication-authors"><p><strong>Quang Nguyen</strong>, <a href="https://truongvu2000nd.github.io/">Truong Vu</a>, Trong-Tung Nguyen, <a href="https://yuxinwenrick.github.io/">Yuxin Wen</a>, <a href="https://www.linkedin.com/in/prestonrobinette/">Preston K Robinette</a>, <a href="http://www.taylortjohnson.com/">Taylor T Johnson</a>, <a href="https://www.cs.umd.edu/~tomg/">Tom Goldstein</a>, <a href="https://scholar.google.com/citations?hl=en&amp;user=FYZ5ODQAAAAJ&amp;view_op=list_works">Anh Tuan Tran</a>, <a href="https://khoinguyen.org">Khoi Nguyen</a></p>
+</span>
+                        
+                            <span class="publication-venue"><p>Under review</p>
+</span>
+                        
+                        <div class="publication-excerpt" style="display: none"><p>Utilizing multi-modal LLM for localizing diffusion-based edited regions.</p>
+</div>
+                        <!-- <p><p>Image editing technologies are tools used to transform, adjust, remove, or otherwise alter images. Recent research has significantly improved the capabilities of image editing tools, enabling the creation of photorealistic and semantically informed forged regions that are nearly indistinguishable from authentic imagery, presenting new challenges in digital forensics and media credibility. While current image forensic techniques are adept at localizing forged regions produced by traditional image manipulation methods, current capabilities struggle to localize regions created by diffusion-based techniques. To bridge this gap, we present a novel framework that integrates a multimodal Large Language Model (LLM) for enhanced reasoning capabilities to localize tampered regions in images produced by diffusion model-based editing methods. By leveraging the contextual and semantic strengths of LLMs, our framework achieves promising results on MagicBrush, AutoSplice, and PerfBrush (novel diffusion-based dataset) datasets, outperforming previous approaches in mIoU and F1-score metrics.  Notably, our method excels on the PerfBrush dataset, a self-constructed test set featuring previously unseen types of edits. Here, where traditional methods typically falter, achieving markedly low scores, our approach demonstrates promising performance.</p>
+</p> -->
+                        
+                    </div>
+                    
+                    <div class="col-5 d-none d-md-block align-self-center">
+                        <img class="cover-image" src="/assets/cover_images/editscout-cover.jpg" />
+                    </div>
+                    
+                </div>
+                
+                <div class="row" style="padding: 0.25rem 0">
+                    <div class="col">
+                        <p class="h5 publication-title">Stable Messenger: Steganography for Message-Concealed Image Generation</p>
+                        <span class="publication-authors"><p><strong>Quang Nguyen</strong>, <a href="https://truongvu2000nd.github.io/">Truong Vu</a>, <a href="https://scholar.google.com/citations?hl=en&amp;user=FYZ5ODQAAAAJ&amp;view_op=list_works">Anh Tran</a>, <a href="https://khoinguyen.org">Khoi Nguyen</a></p>
+</span>
+                        
+                            <span class="publication-venue">
+</span>
+                        
+                        <div class="publication-excerpt" style="display: none"><p>Enhancing steganography performance with novel universally adaptive loss and diffusion-based stganography framework.</p>
+</div>
+                        <!-- <p><p>In the ever-expanding digital landscape, safeguarding sensitive information remains paramount. This paper delves deep into digital protection, specifically focusing on steganography. While prior research predominantly fixated on individual bit decoding, we address this limitation by introducing ``message accuracy’’, a novel metric evaluating the entirety of decoded messages for a more holistic evaluation. In addition, we propose an adaptive universal loss tailored to enhance message accuracy, named Log-Sum-Exponential (LSE) loss, thereby significantly improving the message accuracy of recent approaches. Furthermore, we also introduce a new latent-aware encoding technique in our framework named \Approach, harnessing pretrained Stable Diffusion for advanced steganographic image generation, giving rise to a better trade-off between image quality and message recovery. Throughout experimental results, we have demonstrated the superior performance of the new LSE loss and latent-aware encoding technique. This comprehensive approach marks a significant step in evolving evaluation metrics, refining loss functions, and innovating image concealment techniques, aiming for more robust and dependable information protection.</p>
+</p> -->
+                        
+                        <p class="publication-links"> <a href="https://arxiv.org/abs/2312.01284">Paper</a> 
+                         
+                         
+                         
+                         
+                         
+                         
+                         
+                         
+                        / <a href="" class="tldr_btn" role="button">TL;DR</a> 
+                        </p>
+                        
+                    </div>
+                    
+                    <div class="col-5 d-none d-md-block align-self-center">
+                        <img class="cover-image" src="/assets/cover_images/stega-cover.jpg" />
+                    </div>
+                    
+                </div>
+                
+                <div class="row" style="padding: 0.25rem 0">
+                    <div class="col">
+                        <p class="h5 publication-title">Dataset Diffusion: Diffusion-based Synthetic Data Generation for Pixel-Level Semantic Segmentation</p>
+                        <span class="publication-authors"><p><strong>Quang Nguyen</strong>, <a href="https://truongvu2000nd.github.io/">Truong Vu</a>, <a href="https://scholar.google.com/citations?hl=en&amp;user=FYZ5ODQAAAAJ&amp;view_op=list_works">Anh Tran</a>, <a href="https://khoinguyen.org">Khoi Nguyen</a></p>
+</span>
+                        
+                            <span class="publication-venue"><p><em>Neural Information Processing Systems</em> (NeurIPS), 2023</p>
+</span>
+                        
+                        <div class="publication-excerpt" style="display: none"><p>Training-free framework to synthesize dataset for semantic segmentation by utilizing self + cross attention from Stable Diffusion</p>
+</div>
+                        <!-- <p><p>Preparing training data for deep vision models is a labor-intensive task. To address this, generative models have emerged as an effective solution for generating synthetic data. While current generative models produce image-level category labels, we propose a novel method for generating pixel-level semantic segmentation labels using the text-to-image generative model Stable Diffusion (SD). By utilizing the text prompts, cross-attention, and self-attention of SD, we introduce three new techniques: class-prompt appending, class-prompt cross-attention, and self-attention exponentiation. These techniques enable us to generate segmentation maps corresponding to synthetic images. These maps serve as pseudo-labels for training semantic segmenters, eliminating the need for labor-intensive pixel-wise annotation. To account for the imperfections in our pseudo-labels, we incorporate uncertainty regions into the segmentation, allowing us to disregard loss from those regions. We conduct evaluations on two datasets, PASCAL VOC and MSCOCO, and our approach significantly outperforms concurrent work.</p>
+</p> -->
+                        
+                        <p class="publication-links"> <a href="https://arxiv.org/abs/2309.14303">Paper</a> 
+                         
+                        / <a href="https://dataset-diffusion.github.io/">Project Page</a> 
+                         
+                         
+                         
+                        / <a href="https://github.com/VinAIResearch/Dataset-Diffusion">Code</a> 
+                         
+                         
+                        / <a href="" class="tldr_btn" role="button">TL;DR</a> 
+                        </p>
+                        
+                    </div>
+                    
+                    <div class="col-5 d-none d-md-block align-self-center">
+                        <img class="cover-image" src="/assets/cover_images/dd-cover.jpg" />
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <p class="h4 section-title"><strong>Academic Services</strong></p>
+            <p>
+                Reviewer for NeurIPS/CVPRW/BMVC
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <!-- <div class="col">
+            <p class="h4 section-title">Side Projects</p>
+            <p><a href="https://github.com/TonyLianLong/stable-diffusion-xl-demo">Stable Diffusion XL Demo WebUI</a>: A gradio-based WebUI that allows playing around with <a href="https://arxiv.org/abs/2307.01952">SDXL</a> locally and on Colab for free. <a target="_blank" href="https://colab.research.google.com/github/TonyLianLong/stable-diffusion-xl-demo/blob/main/Stable_Diffusion_XL_Demo.ipynb">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a></p>
+            <p><a href="https://github.com/TonyLianLong/AnimeGAN.js">AnimeGAN.js</a>: An implementation of AnimeGAN, which converts photos to anime style online, with <a href="https://github.com/tensorflow/tfjs">tf.js</a>.</p>
+            <p><a href="https://github.com/TonyLianLong/Rainbow">Rainbow</a>: An implementation of Rainbow algorithm with <a href="https://github.com/PaddlePaddle/PARL">PARL</a> reinforcement learning framework.</p>
+        </div> -->
+    </div>
+</main>
+
+<footer class="footer">
+    <div class="container-sm">
+        <div class="row">
+            <div class="col" style="text-align: center">
+                <span class="text-muted">
+                    Feel free to use the <a href="https://github.com/TonyLianLong/websitev2">source code</a> of this website. References designs from <a href="https://github.com/HaozhiQi/haozhiqi.github.io/">Haozhi Qi</a>, <a href="https://github.com/jonbarron/website">Jon Barron</a>, and <a href="https://tonylian.com/">Long Lian</a>. The fonts are based on <a href="https://checkmyworking.com/cm-web-fonts/">this</a> project. Uses <a href="https://github.com/jekyll/jekyll">Jekyll</a> and <a href="https://getbootstrap.com/">Bootstrap</a>.
+                </span>
+            </div>
+        </div>
+    </div>
+</footer>
+:ET

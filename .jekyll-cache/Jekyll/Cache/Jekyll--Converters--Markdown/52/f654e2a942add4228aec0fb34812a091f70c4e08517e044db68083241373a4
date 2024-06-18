@@ -1,0 +1,473 @@
+I"٥<main role="main" class="container-sm" style="max-width: 1080px">
+    <div class="row">
+        <div class="col">
+            <p class="h1 mt-5 page-title">
+                <img class="profile-img-small d-md-none" src="/assets/profile.jpg" />
+                <span style="clear: right">Quang Nguyen</span>
+            </p>
+            <p class="h4 section-title" style="clear: right">About</p>
+            
+            <p><p>I am an EECS PhD student at UC Berkeley, advised by <a href="https://www.adamyala.org/">Prof. Adam Yala</a> and <a href="https://people.eecs.berkeley.edu/~trevor/">Prof. Trevor Darrell</a>. I completed my B.A. in Computer Science at UC Berkeley, where I had the privilege of being supervised by <a href="https://www1.icsi.berkeley.edu/~stellayu/">Prof. Stella Yu</a> during my undergraduate studies. My primary research focus involves data-efficient computer vision algorithms that leverage various forms of supervision or even operate without external supervision. I have also gained valuable research experiences as an intern with Baidu’s <a href="https://github.com/paddlepaddle/paddle">distributed deep learning</a> team.</p>
+</p>
+            <a href="mailto:longlian@berkeley.edu">Email</a> / <a href="https://scholar.google.com/citations?user=eOLxyqUAAAAJ">Google Scholar</a> / 
+                <a href="https://twitter.com/LongTonyLian">Twitter</a> / <a href="https://www.linkedin.com/in/longlian">LinkedIn</a> / <a href="https://github.com/TonyLianLong">Github</a>
+        </div>
+        <div class="col-auto d-none d-md-block">
+            <img class="profile-img" src="/assets/profile.jpg" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <p class="note">
+                Recently, an identity attacker has been sending spam emails under my name through anonymous email addresses. <b>Please disregard the spam email if you happen to receive one of them.</b> I have already taken the necessary steps to report this fraudulent activity to the appropriate administrative team. I apologize for any confusion this may cause.
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <p class="h4 section-title">Publications <span class="h6">(*: equal contribution)</span></p>
+            <div class="container-fluid" style="padding: 0;">
+                
+                
+                <div class="row" style="padding: 0.25rem 0">
+                    <div class="col">
+                        <p class="h5 publication-title">CrossMAE: Rethinking Patch Dependence for Masked Autoencoders</p>
+                        <span class="publication-authors"><p>Letian Fu*, <strong>Long Lian*</strong>, Renhao Wang, Baifeng Shi, Xudong Wang, Adam Yala†, Trevor Darrell†, Alexei A. Efros†, Ken Goldberg†</p>
+</span>
+                        
+                            <span class="publication-venue">
+</span>
+                        
+                        <div class="publication-excerpt" style="display: none"><p>Independent partial patch reconstruction facilitates efficient representation learning.</p>
+</div>
+                        <!-- <p><p>In this work, we re-examine inter-patch dependencies in the decoding mechanism of masked autoencoders (MAE). We decompose this decoding mechanism for masked patch reconstruction in MAE into self-attention and cross-attention. Our investigations suggest that self-attention between mask patches is not essential for learning good representations. To this end, we propose a novel pretraining framework: Cross-Attention Masked Autoencoders (CrossMAE). CrossMAE’s decoder leverages only cross-attention between masked and visible tokens, with no degradation in downstream performance. This design also enables decoding only a small subset of mask tokens, boosting efficiency. Furthermore, each decoder block can now leverage different encoder features, resulting in improved representation learning. CrossMAE matches MAE in performance with 2.5 to 3.7× less decoding compute. It also surpasses MAE on ImageNet classification and COCO instance segmentation under the same compute.</p>
+</p> -->
+                        
+                        <p class="publication-links"> <a href="https://arxiv.org/abs/2401.14391">Paper</a> 
+                         
+                        / <a href="https://crossmae.github.io/">Project Page</a> 
+                         
+                         
+                         
+                        / <a href="https://github.com/TonyLianLong/CrossMAE">Code</a> 
+                         
+                         
+                        / <a href="" class="tldr_btn" role="button">TL;DR</a> 
+                        </p>
+                        
+                    </div>
+                    
+                    <div class="col-5 d-none d-md-block align-self-center">
+                        <img class="cover-image" src="/assets/cover_images/2024-01-27-CrossMAE.jpg" />
+                    </div>
+                    
+                </div>
+                
+                <div class="row" style="padding: 0.25rem 0">
+                    <div class="col">
+                        <p class="h5 publication-title">Dataset Diffusion: Diffusion-based Synthetic Data Generation for Pixel-Level Semantic Segmentation</p>
+                        <span class="publication-authors"><p>Letian Fu*, <strong>Long Lian*</strong>, Renhao Wang, Baifeng Shi, Xudong Wang, Adam Yala†, Trevor Darrell†, Alexei A. Efros†, Ken Goldberg†</p>
+</span>
+                        
+                            <span class="publication-venue"><p><em>International Conference on Learning Representations</em> (ICLR), 2024</p>
+</span>
+                        
+                        <div class="publication-excerpt" style="display: none"><p>Independent partial patch reconstruction facilitates efficient representation learning.</p>
+</div>
+                        <!-- <p><p>In this work, we re-examine inter-patch dependencies in the decoding mechanism of masked autoencoders (MAE). We decompose this decoding mechanism for masked patch reconstruction in MAE into self-attention and cross-attention. Our investigations suggest that self-attention between mask patches is not essential for learning good representations. To this end, we propose a novel pretraining framework: Cross-Attention Masked Autoencoders (CrossMAE). CrossMAE’s decoder leverages only cross-attention between masked and visible tokens, with no degradation in downstream performance. This design also enables decoding only a small subset of mask tokens, boosting efficiency. Furthermore, each decoder block can now leverage different encoder features, resulting in improved representation learning. CrossMAE matches MAE in performance with 2.5 to 3.7× less decoding compute. It also surpasses MAE on ImageNet classification and COCO instance segmentation under the same compute.</p>
+</p> -->
+                        
+                        <p class="publication-links"> <a href="https://arxiv.org/abs/2401.14391">Paper</a> 
+                         
+                        / <a href="https://crossmae.github.io/">Project Page</a> 
+                         
+                         
+                         
+                        / <a href="https://github.com/TonyLianLong/CrossMAE">Code</a> 
+                         
+                         
+                        / <a href="" class="tldr_btn" role="button">TL;DR</a> 
+                        </p>
+                        
+                    </div>
+                    
+                    <div class="col-5 d-none d-md-block align-self-center">
+                        <img class="cover-image" src="/assets/cover_images/2024-01-27-CrossMAE.jpg" />
+                    </div>
+                    
+                </div>
+                
+                <div class="row" style="padding: 0.25rem 0">
+                    <div class="col">
+                        <p class="h5 publication-title">Unsupervised Universal Image Segmentation</p>
+                        <span class="publication-authors"><p>Dantong Niu*, Xudong Wang*, Xinyang Han*, <strong>Long Lian</strong>, Roei Herzig, Trevor Darrell</p>
+</span>
+                        
+                            <span class="publication-venue">
+</span>
+                        
+                        <div class="publication-excerpt" style="display: none"><p>A novel unified framework adept at performing various instance, semantic and panoptic segmentation tasks without <em>any</em> supervision.</p>
+</div>
+                        <!-- <p><p>Several unsupervised image segmentation approaches have been proposed which eliminate the need for dense manually-annotated segmentation masks; current models separately handle either semantic segmentation (e.g., STEGO) or class-agnostic instance segmentation (e.g., CutLER), but not both (i.e., panoptic segmentation). We propose an Unsupervised Universal Segmentation model (U2Seg) adept at performing various image segmentation tasks – instance, semantic and panoptic – using a novel unified framework. U2Seg generates pseudo semantic labels for these segmentation tasks via leveraging self-supervised models followed by clustering; each cluster represents different semantic and/or instance membership of pixels. We then self-train the model on these pseudo semantic labels, yielding substantial performance gains over specialized methods tailored to each task: a +2.6 APbox boost vs. CutLER in unsupervised instance segmentation on COCO and a +7.0 PixelAcc increase (vs. STEGO) in unsupervised semantic segmentation on COCOStuff. Moreover, our method sets up a new baseline for unsupervised panoptic segmentation, which has not been previously explored. U2Seg is also a strong pretrained model for few-shot segmentation, surpassing CutLER by +5.0 APmask when trained on a low-data regime, e.g., only 1% COCO labels. We hope our simple yet effective method can inspire more research on unsupervised universal image segmentation.</p>
+</p> -->
+                        
+                        <p class="publication-links"> <a href="https://arxiv.org/abs/2312.17243">Paper</a> 
+                         
+                         
+                         
+                         
+                         
+                         
+                         
+                        / <a href="https://arxiv.org/abs/2312.17243">BibTex</a> 
+                        / <a href="" class="tldr_btn" role="button">TL;DR</a> 
+                        </p>
+                        
+                    </div>
+                    
+                    <div class="col-5 d-none d-md-block align-self-center">
+                        <img class="cover-image" src="/assets/cover_images/2023-12-28-U2Seg.jpg" />
+                    </div>
+                    
+                </div>
+                
+                <div class="row" style="padding: 0.25rem 0">
+                    <div class="col">
+                        <p class="h5 publication-title">Self-correcting LLM-controlled Diffusion Models</p>
+                        <span class="publication-authors"><p>Tsung-Han Wu*, <strong>Long Lian*</strong>, Joseph E Gonzalez, Boyi Li, Trevor Darrell</p>
+</span>
+                        
+                            <span class="publication-venue">
+</span>
+                        
+                        <div class="publication-excerpt" style="display: none"><p>A text-to-image generation framework that iteratively corrects inaccuracies by integrating a self-correcting LLM with diffusion models, significantly improving image alignment with complex prompts and enabling image editing tasks.</p>
+</div>
+                        <!-- <p><p>Text-to-image generation has witnessed significant progress with the advent of diffusion models. Despite the ability to generate photorealistic images, current text-to-image diffusion models still often struggle to accurately interpret and follow complex input text prompts. In contrast to existing models that aim to generate images only with their best effort, we introduce Self-correcting LLM-controlled Diffusion (SLD). SLD is a framework that generates an image from the input prompt, assesses its alignment with the prompt, and performs self-corrections on the inaccuracies in the generated image. Steered by an LLM controller, SLD turns text-to-image generation into an iterative closed-loop process, ensuring correctness in the resulting image. SLD is not only training-free but can also be seamlessly integrated with diffusion models behind API access, such as DALL-E 3, to further boost the performance of state-of-the-art diffusion models. Experimental results show that our approach can rectify a majority of incorrect generations, particularly in generative numeracy, attribute binding, and spatial relationships. Furthermore, by simply adjusting the instructions to the LLM, SLD can perform image editing tasks, bridging the gap between text-to-image generation and image editing pipelines. We will make our code available for future research and applications.</p>
+</p> -->
+                        
+                        <p class="publication-links"> <a href="https://arxiv.org/abs/2311.16090">Paper</a> 
+                         
+                        / <a href="https://self-correcting-llm-diffusion.github.io">Project Page</a> 
+                         
+                         
+                         
+                        / <a href="https://github.com/tsunghan-wu/SLD">Code</a> 
+                         
+                        / <a href="https://self-correcting-llm-diffusion.github.io/#citation">BibTex</a> 
+                        / <a href="" class="tldr_btn" role="button">TL;DR</a> 
+                        </p>
+                        
+                    </div>
+                    
+                    <div class="col-5 d-none d-md-block align-self-center">
+                        <img class="cover-image" src="/assets/cover_images/2023-11-27-SLD.jpg" />
+                    </div>
+                    
+                </div>
+                
+                <div class="row" style="padding: 0.25rem 0">
+                    <div class="col">
+                        <p class="h5 publication-title">LLM-grounded Video Diffusion Models</p>
+                        <span class="publication-authors"><p><strong>Long Lian*</strong>, Baifeng Shi*, Adam Yala, Trevor Darrell, Boyi Li</p>
+</span>
+                        
+                            <span class="publication-venue"><p><em>International Conference on Learning Representations</em> (ICLR), 2024</p>
+</span>
+                        
+                        <div class="publication-excerpt" style="display: none"><p>Improving text-to-video generation by using a large language model to make plans before the actual video generation, achieving realistic video generation that align with complex input prompts.</p>
+</div>
+                        <!-- <p><p>Text-conditioned diffusion models have emerged as a promising tool for neural video generation. However, current models still struggle with intricate spatiotemporal prompts and often generate restricted or incorrect motion (e.g., even lacking the ability to be prompted for objects moving from left to right). To address these limitations, we introduce LLM-grounded Video Diffusion (LVD). Instead of directly generating videos from the text inputs, LVD first leverages a large language model (LLM) to generate dynamic scene layouts based on the text inputs and subsequently uses the generated layouts to guide a diffusion model for video generation. We show that LLMs are able to understand complex spatiotemporal dynamics from text alone and generate layouts that align closely with both the prompts and the object motion patterns typically observed in the real world. We then propose to guide video diffusion models with these layouts by adjusting the attention maps. Our approach is training-free and can be integrated into any video diffusion model that admits classifier guidance. Our results demonstrate that LVD significantly outperforms its base video diffusion model and several strong baseline methods in faithfully generating videos with the desired attributes and motion patterns.</p>
+</p> -->
+                        
+                        <p class="publication-links"> <a href="https://arxiv.org/abs/2309.17444">Paper</a> 
+                         
+                        / <a href="https://llm-grounded-video-diffusion.github.io">Project Page</a> 
+                         
+                         
+                         
+                        / <a href="https://github.com/TonyLianLong/LLM-groundedVideoDiffusion">Code</a> 
+                         
+                        / <a href="https://llm-grounded-video-diffusion.github.io/#citation">BibTex</a> 
+                        / <a href="" class="tldr_btn" role="button">TL;DR</a> 
+                        </p>
+                        
+                    </div>
+                    
+                    <div class="col-5 d-none d-md-block align-self-center">
+                        <img class="cover-image" src="/assets/cover_images/2023-09-29-LVD.png" />
+                    </div>
+                    
+                </div>
+                
+                <div class="row" style="padding: 0.25rem 0">
+                    <div class="col">
+                        <p class="h5 publication-title">LLM-grounded Diffusion: Enhancing Prompt Understanding of Text-to-Image Diffusion Models with Large Language Models</p>
+                        <span class="publication-authors"><p><strong>Long Lian</strong>, Boyi Li, Adam Yala, Trevor Darrell</p>
+</span>
+                        
+                            <span class="publication-venue"><p>Transactions on Machine Learning Research (TMLR)</p>
+</span>
+                        
+                        <div class="publication-excerpt" style="display: none"><p>Enhancing the prompt understanding capabilities of text-to-image diffusion models with large-language models for grounding.</p>
+</div>
+                        <!-- <p><p>Recent advancements in text-to-image generation with diffusion models have yielded remarkable results synthesizing highly realistic and diverse images. However, these models still encounter difficulties when generating images from prompts that demand spatial or common sense reasoning. We propose to equip diffusion models with enhanced reasoning capabilities by using off-the-shelf pretrained large language models (LLMs) in a novel two-stage generation process. First, we adapt an LLM to be a text-guided layout generator through in-context learning. When provided with an image prompt, an LLM outputs a scene layout in the form of bounding boxes along with corresponding individual descriptions. Second, we steer a diffusion model with a novel controller to generate images conditioned on the layout. Both stages utilize frozen pretrained models without any LLM or diffusion model parameter optimization. We validate the superiority of our design by demonstrating its ability to outperform the base diffusion model in accurately generating images according to prompts that necessitate both language and spatial reasoning. Additionally, our method naturally allows dialog-based scene specification and is able to handle prompts in a language that is not well-supported by the underlying diffusion model.</p>
+</p> -->
+                        
+                        <p class="publication-links"> <a href="https://arxiv.org/abs/2305.13655">Paper</a> 
+                        / <a href="https://bair.berkeley.edu/blog/2023/05/23/lmd/">Blog Post</a> 
+                        / <a href="https://llm-grounded-diffusion.github.io/">Project Page</a> 
+                        / <a href="https://huggingface.co/spaces/longlian/llm-grounded-diffusion">Demo</a> 
+                         
+                         
+                        / <a href="https://github.com/TonyLianLong/LLM-groundedDiffusion">Code</a> 
+                        / <a href="/assets/posters/lmd_poster.png">Poster</a> 
+                        / <a href="https://llm-grounded-diffusion.github.io/#citation">BibTex</a> 
+                        / <a href="" class="tldr_btn" role="button">TL;DR</a> 
+                        </p>
+                        
+                    </div>
+                    
+                    <div class="col-5 d-none d-md-block align-self-center">
+                        <img class="cover-image" src="/assets/cover_images/2023-05-22-LMD.gif" />
+                    </div>
+                    
+                </div>
+                
+                <div class="row" style="padding: 0.25rem 0">
+                    <div class="col">
+                        <p class="h5 publication-title">Q-Diffusion: Quantizing Diffusion Models</p>
+                        <span class="publication-authors"><p>Xiuyu Li, Yijiang Liu, <strong>Long Lian</strong>, Huanrui Yang, Zhen Dong, Daniel Kang, Shanghang Zhang, Kurt Keutzer</p>
+</span>
+                        
+                            <span class="publication-venue"><p><em>International Conference on Computer Vision</em> (ICCV), 2023</p>
+</span>
+                        
+                        <div class="publication-excerpt" style="display: none"><p>Running Stable Diffusion in 4-bit weights with high generation quality for the first time.</p>
+</div>
+                        <!-- <p><p>Diffusion models have achieved great success in image synthesis through iterative noise estimation using deep neural networks. However, the slow inference, high memory consumption, and computation intensity of the noise estimation model hinder the efficient adoption of diffusion models. Although post-training quantization (PTQ) is considered a go-to compression method for other tasks, it does not work out-of-the-box on diffusion models. We propose a novel PTQ method specifically tailored towards the unique multi-timestep pipeline and model architecture of the diffusion models, which compresses the noise estimation network to accelerate the generation process. We identify the key difficulty of diffusion model quantization as the changing output distributions of noise estimation networks over multiple time steps and the bimodal activation distribution of the shortcut layers within the noise estimation network. We tackle these challenges with timestep-aware calibration and split shortcut quantization in this work. Experimental results show that our proposed method is able to quantize full-precision unconditional diffusion models into 4-bit while maintaining comparable performance (small FID change of at most 2.34 compared to &gt;100 for traditional PTQ) in a training-free manner. Our approach can also be applied to text-guided image generation, where we can run stable diffusion in 4-bit weights with high generation quality for the first time.</p>
+</p> -->
+                        
+                        <p class="publication-links"> <a href="https://arxiv.org/abs/2302.04304">Paper</a> 
+                         
+                        / <a href="https://xiuyuli.com/qdiffusion">Project Page</a> 
+                         
+                         
+                         
+                        / <a href="https://github.com/Xiuyu-Li/q-diffusion">Code</a> 
+                         
+                        / <a href="https://github.com/Xiuyu-Li/q-diffusion#citation">BibTex</a> 
+                        / <a href="" class="tldr_btn" role="button">TL;DR</a> 
+                        </p>
+                        
+                    </div>
+                    
+                    <div class="col-5 d-none d-md-block align-self-center">
+                        <img class="cover-image" src="/assets/cover_images/2023-05-01-QDiffusion.png" />
+                    </div>
+                    
+                </div>
+                
+                <div class="row" style="padding: 0.25rem 0">
+                    <div class="col">
+                        <p class="h5 publication-title">Bootstrapping Objectness from Videos by Relaxed Common Fate and Visual Grouping</p>
+                        <span class="publication-authors"><p><strong>Long Lian</strong>, Zhirong Wu, Stella X. Yu</p>
+</span>
+                        
+                            <span class="publication-venue"><p><em>IEEE/CVF Conference on Computer Vision and Pattern Recognition</em> (CVPR), 2023</p>
+</span>
+                        
+                        <div class="publication-excerpt" style="display: none"><p>Segmenting objects in videos without any human annotation in any training stage.</p>
+</div>
+                        <!-- <p><p>We study learning object segmentation from unlabeled videos. Humans can easily segment moving objects without knowing what they are. The Gestalt law of common fate, i.e., what move at the same speed belong together, has inspired unsupervised object discovery based on motion segmentation. However, common fate is not a reliable indicator of objectness: Parts of an articulated / deformable object may not move at the same speed, whereas shadows / reflections of an object always move with it but are not part of it. Our insight is to bootstrap objectness by first learning image features from relaxed common fate and then refining them based on visual appearance grouping within the image itself and across images statistically. Specifically, we learn an image segmenter first in the loop of approximating optical flow with constant segment flow plus small within-segment residual flow, and then by refining it for more coherent appearance and statistical figure-ground relevance. On unsupervised video object segmentation, using only ResNet and convolutional heads, our model surpasses the state-of-the-art by absolute gains of 7/9/5% on DAVIS16 / STv2 / FBMS59 respectively, demonstrating the effectiveness of our ideas. Our code is publicly available.</p>
+</p> -->
+                        
+                        <p class="publication-links"> <a href="https://arxiv.org/abs/2304.08025">Paper</a> 
+                         
+                        / <a href="https://rcf-video.github.io">Project Page</a> 
+                         
+                        / <a href="https://www.youtube.com/watch?v=dyaDEvT4YkY">Video</a> 
+                        / <a href="https://people.eecs.berkeley.edu/~longlian/RCF_video.html">Demo Video</a> 
+                        / <a href="https://github.com/TonyLianLong/RCF-UnsupVideoSeg">Code</a> 
+                        / <a href="/assets/posters/rcf_poster.png">Poster</a> 
+                        / <a href="https://github.com/TonyLianLong/RCF-UnsupVideoSeg#citation">BibTex</a> 
+                        / <a href="" class="tldr_btn" role="button">TL;DR</a> 
+                        </p>
+                        
+                    </div>
+                    
+                    <div class="col-5 d-none d-md-block align-self-center">
+                        <img class="cover-image" src="/assets/cover_images/2023-03-01-RCF-demo2.gif" />
+                    </div>
+                    
+                </div>
+                
+                <div class="row" style="padding: 0.25rem 0">
+                    <div class="col">
+                        <p class="h5 publication-title">Unsupervised Selective Labeling for More Effective Semi-Supervised Learning</p>
+                        <span class="publication-authors"><p>Xudong Wang*, <strong>Long Lian*</strong>, Stella X. Yu</p>
+</span>
+                        
+                            <span class="publication-venue"><p><em>European Conference on Computer Vision</em> (ECCV), 2022</p>
+</span>
+                        
+                        <div class="publication-excerpt" style="display: none"><p>We focus on selecting the right data to query for label for semi-supervised learning without any label or task information. Our method demonstrates that a small compute spent on careful labeled data selection brings big annotation efficiency.</p>
+</div>
+                        <!-- <p><p>Given an unlabeled dataset and an annotation budget, we study how to selectively label a fixed number of instances so that semi-supervised learning (SSL) on such a partially labeled dataset is most effective. We focus on selecting the right data to label, in addition to usual SSL’s propagating labels from given labeled data to the rest unlabeled data. This instance selection task is challenging, as without any labeled data we don’t know what the objective of learning should be. Intuitively, no matter what the downstream task is, instances to be labeled must be representative and diverse: The former would facilitate label propagation to unlabeled data, whereas the latter would ensure coverage of the entire dataset. We capture this idea by selecting cluster prototypes, either in a pretrained feature space, or along with the feature to be optimized for instance discrimination, both without labels. Our unsupervised selective labeling consistently improves SSL methods over state-of-the-art active learning given labeled data, by 8−25× in label efficiency. For example, it boosts FixMatch by 10%(14%) in accuracy on CIFAR-10(ImageNet-1K) with 0.08%(0.2%) labeled data, demonstrating that small computation spent on what data to label brings significant gain especially under a low annotation budget. Our work sets a new standard for practical SSL.</p>
+</p> -->
+                        
+                        <p class="publication-links"> <a href="https://arxiv.org/abs/2110.03006">Paper</a> 
+                         
+                         
+                         
+                        / <a href="https://people.eecs.berkeley.edu/~longlian/usl_video.html">Video</a> 
+                         
+                        / <a href="https://github.com/TonyLianLong/UnsupervisedSelectiveLabeling">Code</a> 
+                        / <a href="/assets/posters/usl_poster.png">Poster</a> 
+                        / <a href="https://github.com/TonyLianLong/UnsupervisedSelectiveLabeling#citation">BibTex</a> 
+                        / <a href="" class="tldr_btn" role="button">TL;DR</a> 
+                        </p>
+                        
+                    </div>
+                    
+                    <div class="col-5 d-none d-md-block align-self-center">
+                        <img class="cover-image" src="/assets/cover_images/2022-08-08-USL-animation.png" />
+                    </div>
+                    
+                </div>
+                
+                <div class="row" style="padding: 0.25rem 0">
+                    <div class="col">
+                        <p class="h5 publication-title">Debiased Learning from Naturally Imbalanced Pseudo-Labels</p>
+                        <span class="publication-authors"><p>Xudong Wang, Zhirong Wu, <strong>Long Lian</strong>, Stella X. Yu</p>
+</span>
+                        
+                            <span class="publication-venue"><p><em>IEEE/CVF Conference on Computer Vision and Pattern Recognition</em> (CVPR), 2022</p>
+</span>
+                        
+                        <div class="publication-excerpt" style="display: none"><p>We propose a novel and effective debiased learning method based on counterfactual reasoning and adaptive margins to deal with the undesired effect from naturally imbalanced pseudo-labels.</p>
+</div>
+                        <!-- <p><p>Pseudo-labels are confident predictions made on unlabeled target data by a classifier trained on labeled source data. They are widely used for adapting a model to unlabeled data, e.g., in a semi-supervised learning setting. Our key insight is that pseudo-labels are naturally imbalanced due to intrinsic data similarity, even when a model is trained on balanced source data and evaluated on balanced target data. If we address this previously unknown imbalanced classification problem arising from pseudo-labels instead of ground-truth training labels, we could remove model biases towards false majorities created by pseudo-labels. We propose a novel and effective debiased learning method with pseudo-labels, based on counterfactual reasoning and adaptive margins: The former removes the classifier response bias, whereas the latter adjusts the margin of each class according to the imbalance of pseudo-labels. Validated by extensive experimentation, our simple debiased learning delivers significant accuracy gains over the state-ofthe-art on ImageNet-1K: 26% for semi-supervised learning with 0.2% annotations and 9% for zero-shot learning.</p>
+</p> -->
+                        
+                        <p class="publication-links"> <a href="https://arxiv.org/abs/2201.01490">Paper</a> 
+                         
+                         
+                         
+                         
+                         
+                        / <a href="https://github.com/frank-xwang/debiased-pseudo-labeling">Code</a> 
+                         
+                        / <a href="https://github.com/frank-xwang/debiased-pseudo-labeling#citation">BibTex</a> 
+                        / <a href="" class="tldr_btn" role="button">TL;DR</a> 
+                        </p>
+                        
+                    </div>
+                    
+                    <div class="col-5 d-none d-md-block align-self-center">
+                        <img class="cover-image" src="/assets/cover_images/2022-02-01-DebiasPL-animation.gif" />
+                    </div>
+                    
+                </div>
+                
+                <div class="row" style="padding: 0.25rem 0">
+                    <div class="col">
+                        <p class="h5 publication-title">Unsupervised Visual Attention and Invariance for Reinforcement Learning</p>
+                        <span class="publication-authors"><p>Xudong Wang*, <strong>Long Lian*</strong>, Stella X. Yu</p>
+</span>
+                        
+                            <span class="publication-venue"><p><em>IEEE/CVF Conference on Computer Vision and Pattern Recognition</em> (CVPR), 2021</p>
+</span>
+                        
+                        <div class="publication-excerpt" style="display: none"><p>Rather than training a universal RL policy invariant to train-test distribution shift, we proposed unsupervised visual attention and invariance method (VAI) to disperse interference task-irrelevant factors towards a RL policy robust to distractions.</p>
+</div>
+                        <!-- <p><p>The vision-based reinforcement learning (RL) has achieved tremendous success. However, generalizing vision-based RL policy to unknown test environments still remains as a challenging problem. Unlike previous works that focus on training a universal RL policy that is invariant to discrepancies between test and training environment, we focus on developing an independent module to disperse interference factors irrelevant to the task, thereby providing”” clean”” observations for the RL policy. The proposed unsupervised visual attention and invariance method (VAI) contains three key components: 1) an unsupervised keypoint detection model which captures semantically meaningful keypoints in observations; 2) an unsupervised visual attention module which automatically generates the distraction-invariant attention mask for each observation; 3) a self-supervised adapter for visual distraction invariance which reconstructs distraction-invariant attention mask from observations with artificial disturbances generated by a series of foreground and background augmentations. All components are optimized in an unsupervised way, without manual annotation or access to environment internals, and only the adapter is used during inference time to provide distraction-free observations to RL policy. VAI empirically shows powerful generalization capabilities and significantly outperforms current state-of-the-art (SOTA) method by 15% to 49% in DeepMind Control suite benchmark and 61% to 229% in our proposed robot manipulation benchmark, in term of cumulative rewards per episode.</p>
+</p> -->
+                        
+                        <p class="publication-links"> <a href="https://arxiv.org/abs/2104.02921">Paper</a> 
+                         
+                         
+                         
+                         
+                         
+                        / <a href="https://github.com/TonyLianLong/VAI-ReinforcementLearning">Code</a> 
+                        / <a href="/assets/posters/vai_poster.png">Poster</a> 
+                        / <a href="https://github.com/TonyLianLong/VAI-ReinforcementLearning#citation">BibTex</a> 
+                        / <a href="" class="tldr_btn" role="button">TL;DR</a> 
+                        </p>
+                        
+                    </div>
+                    
+                    <div class="col-5 d-none d-md-block align-self-center">
+                        <img class="cover-image" src="/assets/cover_images/2021-04-07-VAI-animation.gif" />
+                    </div>
+                    
+                </div>
+                
+                <div class="row" style="padding: 0.25rem 0">
+                    <div class="col">
+                        <p class="h5 publication-title">Long-tailed Recognition by Routing Diverse Distribution-aware Experts</p>
+                        <span class="publication-authors"><p>Xudong Wang, <strong>Long Lian</strong>, Zhongqi Miao, Ziwei Liu, Stella X. Yu</p>
+</span>
+                        
+                            <span class="publication-venue"><p><em>International Conference on Learning Representations</em> (ICLR), 2021 (<strong>Spotlight</strong>)</p>
+</span>
+                        
+                        <div class="publication-excerpt" style="display: none"><p>Leveraging bias-variance tradeoff, we proposed a universal classification framework for long-tailed distributed data with RoutIng Diverse Experts (RIDE) that improves both accuracy and inference speed.</p>
+</div>
+                        <!-- <p><p>Natural data are often long-tail distributed over semantic classes. Existing recognition methods tend to focus on gaining performance on tail classes, often at the expense of losing performance on head classes and with increased classifier variance. The low tail performance manifests itself in large inter-class confusion and high classifier variance. We aim to reduce both the bias and the variance of a long-tailed classifier by RoutIng Diverse Experts (RIDE), consisting of three components: 1) a shared architecture for multiple classifiers (experts); 2) a distribution-aware diversity loss that encourages more diverse decisions for classes with fewer training instances; and 3) an expert routing module that dynamically assigns more ambiguous instances to additional experts. With on-par computational complexity, RIDE significantly outperforms the state-of-the-art methods by 5% to 7% on all the benchmarks including CIFAR100-LT, ImageNet-LT and iNaturalist 2018. RIDE is also a universal framework that can be applied to different backbone networks and integrated into various long-tailed algorithms and training mechanisms for consistent performance gains.</p>
+</p> -->
+                        
+                        <p class="publication-links"> <a href="https://arxiv.org/pdf/2010.01809">Paper</a> 
+                         
+                         
+                         
+                        / <a href="https://iclr.cc/virtual/2021/spotlight/3456">Video</a> 
+                         
+                        / <a href="https://github.com/frank-xwang/RIDE-LongTailRecognition">Code</a> 
+                        / <a href="/assets/posters/ride_poster.png">Poster</a> 
+                        / <a href="https://github.com/frank-xwang/RIDE-LongTailRecognition#citation">BibTex</a> 
+                        / <a href="" class="tldr_btn" role="button">TL;DR</a> 
+                        </p>
+                        
+                    </div>
+                    
+                    <div class="col-5 d-none d-md-block align-self-center">
+                        <img class="cover-image" src="/assets/cover_images/2020-10-05-RIDE.png" />
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <p class="h4 section-title">Academic Services</p>
+            <p>
+                Reviewer for CVPR/ECCV/ICCV/NeurIPS
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <p class="h4 section-title">Side Projects</p>
+            <p><a href="https://github.com/TonyLianLong/stable-diffusion-xl-demo">Stable Diffusion XL Demo WebUI</a>: A gradio-based WebUI that allows playing around with <a href="https://arxiv.org/abs/2307.01952">SDXL</a> locally and on Colab for free. <a target="_blank" href="https://colab.research.google.com/github/TonyLianLong/stable-diffusion-xl-demo/blob/main/Stable_Diffusion_XL_Demo.ipynb">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab" /></a></p>
+            <p><a href="https://github.com/TonyLianLong/AnimeGAN.js">AnimeGAN.js</a>: An implementation of AnimeGAN, which converts photos to anime style online, with <a href="https://github.com/tensorflow/tfjs">tf.js</a>.</p>
+            <p><a href="https://github.com/TonyLianLong/Rainbow">Rainbow</a>: An implementation of Rainbow algorithm with <a href="https://github.com/PaddlePaddle/PARL">PARL</a> reinforcement learning framework.</p>
+        </div>
+    </div>
+</main>
+
+<footer class="footer">
+    <div class="container-sm">
+        <div class="row">
+            <div class="col" style="text-align: center">
+                <span class="text-muted">
+                    Feel free to use the <a href="https://github.com/TonyLianLong/websitev2">source code</a> of this website. References designs from <a href="https://github.com/HaozhiQi/haozhiqi.github.io/">Haozhi Qi</a> and <a href="https://github.com/jonbarron/website">Jon Barron</a>. The fonts are based on <a href="https://checkmyworking.com/cm-web-fonts/">this</a> project. Uses <a href="https://github.com/jekyll/jekyll">Jekyll</a> and <a href="https://getbootstrap.com/">Bootstrap</a>.
+                </span>
+            </div>
+        </div>
+    </div>
+</footer>
+:ET

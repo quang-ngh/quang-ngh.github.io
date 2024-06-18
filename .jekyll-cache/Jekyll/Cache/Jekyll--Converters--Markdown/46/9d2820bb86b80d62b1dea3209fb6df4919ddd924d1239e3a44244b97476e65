@@ -1,0 +1,201 @@
+I"KA<main role="main" class="container-sm" style="max-width: 1080px">
+    <div class="row">
+        <div class="col">
+            <p class="h1 mt-5 page-title">
+                <img class="profile-img-small d-md-none" src="/assets/profile.jpg" />
+                <span style="clear: right">Quang Nguyen</span>
+            </p>
+            <p class="h4 section-title" style="clear: right">About</p>
+            
+            <p><p>I am an EECS PhD student at UC Berkeley, advised by <a href="https://www.adamyala.org/">Prof. Adam Yala</a> and <a href="https://people.eecs.berkeley.edu/~trevor/">Prof. Trevor Darrell</a>. I completed my B.A. in Computer Science at UC Berkeley, where I had the privilege of being supervised by <a href="https://www1.icsi.berkeley.edu/~stellayu/">Prof. Stella Yu</a> during my undergraduate studies. My primary research focus involves data-efficient computer vision algorithms that leverage various forms of supervision or even operate without external supervision. I have also gained valuable research experiences as an intern with Baidu’s <a href="https://github.com/paddlepaddle/paddle">distributed deep learning</a> team.</p>
+</p>
+            <a href="mailto:longlian@berkeley.edu">Email</a> / <a href="https://scholar.google.com/citations?user=eOLxyqUAAAAJ">Google Scholar</a> / 
+                <a href="https://twitter.com/LongTonyLian">Twitter</a> / <a href="https://www.linkedin.com/in/longlian">LinkedIn</a> / <a href="https://github.com/TonyLianLong">Github</a>
+        </div>
+        <div class="col-auto d-none d-md-block">
+            <img class="profile-img" src="/assets/profile.jpg" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <p class="note">
+                Recently, an identity attacker has been sending spam emails under my name through anonymous email addresses. <b>Please disregard the spam email if you happen to receive one of them.</b> I have already taken the necessary steps to report this fraudulent activity to the appropriate administrative team. I apologize for any confusion this may cause.
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <p class="h4 section-title">Publications <span class="h6">(*: equal contribution)</span></p>
+            <div class="container-fluid" style="padding: 0;">
+                
+                
+                <div class="row" style="padding: 0.25rem 0">
+                    <div class="col">
+                        <p class="h5 publication-title">Unsupervised Universal Image Segmentation</p>
+                        <span class="publication-authors"><p>Dantong Niu*, Xudong Wang*, Xinyang Han*, <strong>Long Lian</strong>, Roei Herzig, Trevor Darrell</p>
+</span>
+                        
+                            <span class="publication-venue">
+</span>
+                        
+                        <div class="publication-excerpt" style="display: none"><p>A novel unified framework adept at performing various instance, semantic and panoptic segmentation tasks without <em>any</em> supervision.</p>
+</div>
+                        <!-- <p><p>Several unsupervised image segmentation approaches have been proposed which eliminate the need for dense manually-annotated segmentation masks; current models separately handle either semantic segmentation (e.g., STEGO) or class-agnostic instance segmentation (e.g., CutLER), but not both (i.e., panoptic segmentation). We propose an Unsupervised Universal Segmentation model (U2Seg) adept at performing various image segmentation tasks – instance, semantic and panoptic – using a novel unified framework. U2Seg generates pseudo semantic labels for these segmentation tasks via leveraging self-supervised models followed by clustering; each cluster represents different semantic and/or instance membership of pixels. We then self-train the model on these pseudo semantic labels, yielding substantial performance gains over specialized methods tailored to each task: a +2.6 APbox boost vs. CutLER in unsupervised instance segmentation on COCO and a +7.0 PixelAcc increase (vs. STEGO) in unsupervised semantic segmentation on COCOStuff. Moreover, our method sets up a new baseline for unsupervised panoptic segmentation, which has not been previously explored. U2Seg is also a strong pretrained model for few-shot segmentation, surpassing CutLER by +5.0 APmask when trained on a low-data regime, e.g., only 1% COCO labels. We hope our simple yet effective method can inspire more research on unsupervised universal image segmentation.</p>
+</p> -->
+                        
+                        <p class="publication-links"> <a href="https://arxiv.org/abs/2312.17243">Paper</a> 
+                         
+                         
+                         
+                         
+                         
+                         
+                         
+                        / <a href="https://arxiv.org/abs/2312.17243">BibTex</a> 
+                        / <a href="" class="tldr_btn" role="button">TL;DR</a> 
+                        </p>
+                        
+                    </div>
+                    
+                    <div class="col-5 d-none d-md-block align-self-center">
+                        <img class="cover-image" src="/assets/cover_images/2023-12-28-U2Seg.jpg" />
+                    </div>
+                    
+                </div>
+                
+                <div class="row" style="padding: 0.25rem 0">
+                    <div class="col">
+                        <p class="h5 publication-title">Stable Messenger: Steganography for Message-Concealed Image Generation</p>
+                        <span class="publication-authors"><p>Tsung-Han Wu*, <strong>Long Lian*</strong>, Joseph E Gonzalez, Boyi Li, Trevor Darrell</p>
+</span>
+                        
+                            <span class="publication-venue">
+</span>
+                        
+                        <div class="publication-excerpt" style="display: none"><p>Enhancing</p>
+</div>
+                        <!-- <p><p>Text-to-image generation has witnessed significant progress with the advent of diffusion models. Despite the ability to generate photorealistic images, current text-to-image diffusion models still often struggle to accurately interpret and follow complex input text prompts. In contrast to existing models that aim to generate images only with their best effort, we introduce Self-correcting LLM-controlled Diffusion (SLD). SLD is a framework that generates an image from the input prompt, assesses its alignment with the prompt, and performs self-corrections on the inaccuracies in the generated image. Steered by an LLM controller, SLD turns text-to-image generation into an iterative closed-loop process, ensuring correctness in the resulting image. SLD is not only training-free but can also be seamlessly integrated with diffusion models behind API access, such as DALL-E 3, to further boost the performance of state-of-the-art diffusion models. Experimental results show that our approach can rectify a majority of incorrect generations, particularly in generative numeracy, attribute binding, and spatial relationships. Furthermore, by simply adjusting the instructions to the LLM, SLD can perform image editing tasks, bridging the gap between text-to-image generation and image editing pipelines. We will make our code available for future research and applications.</p>
+</p> -->
+                        
+                        <p class="publication-links"> <a href="https://arxiv.org/abs/2311.16090">Paper</a> 
+                         
+                        / <a href="https://self-correcting-llm-diffusion.github.io">Project Page</a> 
+                         
+                         
+                         
+                        / <a href="https://github.com/tsunghan-wu/SLD">Code</a> 
+                         
+                        / <a href="https://self-correcting-llm-diffusion.github.io/#citation">BibTex</a> 
+                        / <a href="" class="tldr_btn" role="button">TL;DR</a> 
+                        </p>
+                        
+                    </div>
+                    
+                    <div class="col-5 d-none d-md-block align-self-center">
+                        <img class="cover-image" src="/assets/cover_images/2023-11-27-SLD.jpg" />
+                    </div>
+                    
+                </div>
+                
+                <div class="row" style="padding: 0.25rem 0">
+                    <div class="col">
+                        <p class="h5 publication-title">Dataset Diffusion: Diffusion-based Synthetic Data Generation for Pixel-Level Semantic Segmentation</p>
+                        <span class="publication-authors"><p><strong>Quang Nguyen</strong>, <a href="https://truongvu2000nd.github.io/">Truong Vu</a>, Anh Tran, <a href="https://khoinguyen.org">Khoi Nguyen</a></p>
+</span>
+                        
+                            <span class="publication-venue"><p><em>Neural Information Processing Systems</em> (NeurIPS), 2023</p>
+</span>
+                        
+                        <div class="publication-excerpt" style="display: none"><p>Training-free framework to synthesize dataset for semantic segmentation by utilizing self + cross attention from Stable Diffusion</p>
+</div>
+                        <!-- <p><p>Preparing training data for deep vision models is a labor-intensive task. To address this, generative models have emerged as an effective solution for generating synthetic data. While current generative models produce image-level category labels, we propose a novel method for generating pixel-level semantic segmentation labels using the text-to-image generative model Stable Diffusion (SD). By utilizing the text prompts, cross-attention, and self-attention of SD, we introduce three new techniques: class-prompt appending, class-prompt cross-attention, and self-attention exponentiation. These techniques enable us to generate segmentation maps corresponding to synthetic images. These maps serve as pseudo-labels for training semantic segmenters, eliminating the need for labor-intensive pixel-wise annotation. To account for the imperfections in our pseudo-labels, we incorporate uncertainty regions into the segmentation, allowing us to disregard loss from those regions. We conduct evaluations on two datasets, PASCAL VOC and MSCOCO, and our approach significantly outperforms concurrent work.</p>
+</p> -->
+                        
+                        <p class="publication-links"> <a href="https://arxiv.org/abs/2309.14303">Paper</a> 
+                         
+                        / <a href="https://dataset-diffusion.github.io/">Project Page</a> 
+                         
+                         
+                         
+                        / <a href="https://github.com/VinAIResearch/Dataset-Diffusion">Code</a> 
+                         
+                         
+                        / <a href="" class="tldr_btn" role="button">TL;DR</a> 
+                        </p>
+                        
+                    </div>
+                    
+                    <div class="col-5 d-none d-md-block align-self-center">
+                        <img class="cover-image" src="/assets/cover_images/dd-cover.jpg" />
+                    </div>
+                    
+                </div>
+                
+                <div class="row" style="padding: 0.25rem 0">
+                    <div class="col">
+                        <p class="h5 publication-title">Long-tailed Recognition by Routing Diverse Distribution-aware Experts</p>
+                        <span class="publication-authors"><p>Xudong Wang, <strong>Long Lian</strong>, Zhongqi Miao, Ziwei Liu, Stella X. Yu</p>
+</span>
+                        
+                            <span class="publication-venue"><p><em>International Conference on Learning Representations</em> (ICLR), 2021 (<strong>Spotlight</strong>)</p>
+</span>
+                        
+                        <div class="publication-excerpt" style="display: none"><p>Leveraging bias-variance tradeoff, we proposed a universal classification framework for long-tailed distributed data with RoutIng Diverse Experts (RIDE) that improves both accuracy and inference speed.</p>
+</div>
+                        <!-- <p><p>Natural data are often long-tail distributed over semantic classes. Existing recognition methods tend to focus on gaining performance on tail classes, often at the expense of losing performance on head classes and with increased classifier variance. The low tail performance manifests itself in large inter-class confusion and high classifier variance. We aim to reduce both the bias and the variance of a long-tailed classifier by RoutIng Diverse Experts (RIDE), consisting of three components: 1) a shared architecture for multiple classifiers (experts); 2) a distribution-aware diversity loss that encourages more diverse decisions for classes with fewer training instances; and 3) an expert routing module that dynamically assigns more ambiguous instances to additional experts. With on-par computational complexity, RIDE significantly outperforms the state-of-the-art methods by 5% to 7% on all the benchmarks including CIFAR100-LT, ImageNet-LT and iNaturalist 2018. RIDE is also a universal framework that can be applied to different backbone networks and integrated into various long-tailed algorithms and training mechanisms for consistent performance gains.</p>
+</p> -->
+                        
+                        <p class="publication-links"> <a href="https://arxiv.org/pdf/2010.01809">Paper</a> 
+                         
+                         
+                         
+                        / <a href="https://iclr.cc/virtual/2021/spotlight/3456">Video</a> 
+                         
+                        / <a href="https://github.com/frank-xwang/RIDE-LongTailRecognition">Code</a> 
+                        / <a href="/assets/posters/ride_poster.png">Poster</a> 
+                        / <a href="https://github.com/frank-xwang/RIDE-LongTailRecognition#citation">BibTex</a> 
+                        / <a href="" class="tldr_btn" role="button">TL;DR</a> 
+                        </p>
+                        
+                    </div>
+                    
+                    <div class="col-5 d-none d-md-block align-self-center">
+                        <img class="cover-image" src="/assets/cover_images/2020-10-05-RIDE.png" />
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <p class="h4 section-title">Academic Services</p>
+            <p>
+                Reviewer for CVPR/ECCV/ICCV/NeurIPS
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <p class="h4 section-title">Side Projects</p>
+            <p><a href="https://github.com/TonyLianLong/stable-diffusion-xl-demo">Stable Diffusion XL Demo WebUI</a>: A gradio-based WebUI that allows playing around with <a href="https://arxiv.org/abs/2307.01952">SDXL</a> locally and on Colab for free. <a target="_blank" href="https://colab.research.google.com/github/TonyLianLong/stable-diffusion-xl-demo/blob/main/Stable_Diffusion_XL_Demo.ipynb">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab" /></a></p>
+            <p><a href="https://github.com/TonyLianLong/AnimeGAN.js">AnimeGAN.js</a>: An implementation of AnimeGAN, which converts photos to anime style online, with <a href="https://github.com/tensorflow/tfjs">tf.js</a>.</p>
+            <p><a href="https://github.com/TonyLianLong/Rainbow">Rainbow</a>: An implementation of Rainbow algorithm with <a href="https://github.com/PaddlePaddle/PARL">PARL</a> reinforcement learning framework.</p>
+        </div>
+    </div>
+</main>
+
+<footer class="footer">
+    <div class="container-sm">
+        <div class="row">
+            <div class="col" style="text-align: center">
+                <span class="text-muted">
+                    Feel free to use the <a href="https://github.com/TonyLianLong/websitev2">source code</a> of this website. References designs from <a href="https://github.com/HaozhiQi/haozhiqi.github.io/">Haozhi Qi</a> and <a href="https://github.com/jonbarron/website">Jon Barron</a>. The fonts are based on <a href="https://checkmyworking.com/cm-web-fonts/">this</a> project. Uses <a href="https://github.com/jekyll/jekyll">Jekyll</a> and <a href="https://getbootstrap.com/">Bootstrap</a>.
+                </span>
+            </div>
+        </div>
+    </div>
+</footer>
+:ET
