@@ -16,7 +16,7 @@ title: "Quang Nguyen"
             <a href="mailto:quangngcs@gmail.com">Email</a> / 
             <a href="https://scholar.google.com/citations?user=dqgmViUAAAAJ&hl=vi">Google Scholar</a> / 
             <a href="https://github.com/quang-ngh">Github</a> /
-            <a href="https://github.com/quang-ngh">CV</a>
+            <a href="https://drive.google.com/file/d/1d1GJ1AwBNQiIWvIYWQ35JIv1IQFNfCMb/view?usp=sharing">CV</a>
         </div>
         <div class="col-auto d-none d-md-block">
             <img class="profile-img" src="{{ '/assets/profile.jpg' | relative_url }}" />
