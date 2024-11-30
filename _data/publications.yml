@@ -52,6 +52,8 @@
     - khoinguyen
     - cuongpham 
     - anhtran
+  awards:
+    - Under review
 
 - id: Dynamark
   title: "DynaMark: Dynamic Watermarking for Image Generation Using Wavelet Transform"
@@ -69,6 +71,8 @@
     - cuongpham
     - khoinguyen
     - anhtran 
+  awards:
+    - Under review
 
 - id: SwiftEdit
   title: "SwiftEdit: Lightning Fast Text Guided Image Editing via One-Step Diffusion"
@@ -84,3 +88,5 @@
     - khoinguyen
     - cuongpham 
     - anhtran
+  awards:
+    - Under review
