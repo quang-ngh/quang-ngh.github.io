@@ -1,7 +1,13 @@
-tuanngo:
-  first_name: Tuan
-  last_name: Ngo
-  website: https://ngoductuanlhp.github.io/
+quangnguyen:
+  first_name: Quang
+  last_name: Nguyen
+  website: https://quang-ngh.github.io/
+  is_me: true
+
+truongvu:
+  first_name: Truong
+  last_name: Vu
+  website: https://truongvu2000nd.github.io/
   is_me: true
 
 khoinguyen:
@@ -18,3 +24,36 @@ cuongpham:
   first_name: Cuong
   last_name: Pham
   website: https://sites.google.com/view/cuongpham/home
+
+ducnguyen:
+  first_name: Duc Q.
+  last_name: Nguyen
+  # website: https://sites.google.com/view/cuongpham/home
+
+nghiavo:
+  first_name: Nghia Q.
+  last_name: Vo
+
+thinhnguyen:
+  first_name: Thinh T.
+  last_name: Nguyen
+
+khuongnuyen:
+  first_name: Khuong
+  last_name: Nguyen-An
+
+dangtran:
+  first_name: Dang N.
+  last_name: Tran
+
+thoquan:
+  first_name: Tho T.
+  last_name: Quan
+
+tungnguyen:
+  first_name: Trong Tung
+  last_name: Nguyen
+
+ngannguyen:
+  first_name: Hoai Ngan
+  last_name: Nguyen

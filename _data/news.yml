@@ -1,23 +1,24 @@
+- date: Nov 2024
+  description: >-
+    Finally, I earned my B.E. in Computer Science after four unforgettable years at [HCMUT](https://hcmut.edu.vn/en)
+
 - date: May 2024
   description: >-
-    I joined [Snap Research](https://research.snap.com/) as a Research Intern.
+    I successfully defended my thesis with the highest score
 
-
-- date: Feb 2024
+- date: Mar 2024
   description: >-
-    [Open3DIS](https://open3dis.github.io/) has been accepted to CVPR 2024. We have also released the [code](https://github.com/VinAIResearch/Open3DIS).
+    I have been promoted to **Research Resident** at [VinAI Research](https://vinai.io)
 
-
-- date: Jul 2023
+- date: Dec 2023
   description: >-
-    [GaPro](https://arxiv.org/abs/2307.13251) has been accepted to ICCV 2023. We have also released the [code](https://github.com/VinAIResearch/GaPro).
+    I am honored to receive the **NeurIPS Scholar** award and thrilled to attend my first in-person conference in New Orleans, where I will be presenting our work, Dataset Diffusion.
+
+- date: Sep 2023
+  description: >-
+    [**Dataset Diffusion**](https://arxiv.org/abs/2309.14303) has been accepted to **NeurIPS 2023**. We have also released the [code](https://github.com/VinAIResearch/Dataset-Diffusion).
 
 
 - date: Feb 2023
   description: >-
-    [ISBNet](https://arxiv.org/abs/2303.00246) has been accepted to CVPR 2023. We have also released the [code](https://github.com/VinAIResearch/ISBNet).
-
-
-- date: Jul 2022
-  description: >-
-    [GeoFormer](https://arxiv.org/abs/2207.10859) has been accepted to ECCV 2022. We have also released the [code](https://github.com/VinAIResearch/GeoFormer).
+    I joined [VinAI Research](https://vinai.io) as a **Research Intern**.
