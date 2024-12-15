@@ -55,6 +55,23 @@
   awards:
     - Under review
 
+- id: SwiftEdit
+  title: "SwiftEdit: Lightning Fast Text Guided Image Editing via One-Step Diffusion"
+  # venue: Scientific Reports (Q1), 2022
+  description: "Instantly text-guided image editing within a fraction of second by one-step diffusion model"
+  # github: VinAIResearch/Dataset-Diffusion
+  arxiv: 2412.04301
+  image: swiftedit.jpg 
+  project_page: "https://swift-edit.github.io"
+  authors:  
+    - tungnguyen 
+    - quangnguyen
+    - khoinguyen
+    - cuongpham 
+    - anhtran
+  awards:
+    - Under review
+
 - id: Dynamark
   title: "DynaMark: Dynamic Watermarking for Image Generation Using Wavelet Transform"
   # venue: Scientific Reports (Q1), 2022
@@ -71,22 +88,5 @@
     - cuongpham
     - khoinguyen
     - anhtran 
-  awards:
-    - Under review
-
-- id: SwiftEdit
-  title: "SwiftEdit: Lightning Fast Text Guided Image Editing via One-Step Diffusion"
-  # venue: Scientific Reports (Q1), 2022
-  description: "Instantly text-guided image editing within a fraction of second by one-step diffusion model"
-  project_page: ""
-  # github: VinAIResearch/Dataset-Diffusion
-  # arxiv: 2309.14303
-  image: swiftedit.jpg 
-  authors:  
-    - tungnguyen 
-    - quangnguyen
-    - khoinguyen
-    - cuongpham 
-    - anhtran
   awards:
     - Under review
