@@ -68,7 +68,7 @@ layout: null
               <span class="icon"><i class="fas fa-envelope"></i></span>
               <span>Email</span>
             </a>
-            <a class="btn btn-primary" href="assets/CV.pdf">
+            <a class="btn btn-primary" href="{{ '/assets/CV.pdf' | relative_url }}">
               <span class="icon"><i class="fas fa-file-pdf"></i></span>
               <span>CV</span>
             </a>
@@ -145,15 +145,32 @@ layout: null
             {% assign venue_key_raw = publication.venue | split: ", " | first %}
             {% assign venue_key = venue_key_raw | split: "'" | first | strip %}
             {% assign venue_data = site.data.venues[venue_key] %}
-            {% if venue_data %}
-            {% if venue_data.color2 %}
-            <a class="pub-venue-tag" href="{{ venue_data.url }}" target="_blank" rel="noopener" style="background: linear-gradient(135deg, {{ venue_data.color }}, {{ venue_data.color2 }});">{{ publication.venue }}</a>
-            {% else %}
-            <a class="pub-venue-tag" href="{{ venue_data.url }}" target="_blank" rel="noopener" style="background-color: {{ venue_data.color }};">{{ publication.venue }}</a>
-            {% endif %}
-            {% else %}
-            <span class="pub-venue-tag pub-venue-tag--default">{{ publication.venue }}</span>
-            {% endif %}
+            {% if venue_data and venue_data.color %}
+              {% assign c1 = venue_data.color | strip | remove: '"' %}
+              {% if venue_data.color2 %}
+                {% assign c2 = venue_data.color2 | strip | remove: '"' %}
+                {% comment %}
+                  Render the venue tag with the correct color(s) if available.
+                  Linear gradient if both c1 and c2, otherwise solid color with c1.
+                {% endcomment %}
+                {% if venue_data.color2 %}
+                  <a class="pub-venue-tag"
+                     href="{{ venue_data.url }}"
+                     target="_blank" rel="noopener"
+                     style="background: linear-gradient(135deg, {{ c1 }}, {{ c2 }});">
+                    {{ publication.venue }}
+                  </a>
+                {% else %}
+                  <a class="pub-venue-tag"
+                     href="{{ venue_data.url }}"
+                     target="_blank" rel="noopener"
+                     style="background-color: {{ c1 }};">
+                    {{ publication.venue }}
+                  </a>
+                {% endif %}
+                {% else %}
+                  <span class="pub-venue-tag pub-venue-tag--default">{{ publication.venue }}</span>
+                {% endif %}
           </div>
           <div class="pub-authors">
             {% if publication.first_authors %}
