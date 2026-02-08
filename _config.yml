@@ -20,20 +20,20 @@
 
 title: Quang Nguyen
 name: Quang Nguyen
-position: Research Resident
-email: quangngcs@gmail.com
+position: Ph.D. Student
+email: quang.ng@cs.rutgers.edu
 description: >-
-  I am an AI Research Resident at [VinAI Research](https://vinai.io), with primary research interests in generative models. 
-  My research interest focuses on: improving controllability, quality, and real-world applicability of text-guided generative models and 
-  ensuring the ethical and secure use of generative AI. Prior to joining VinAI, I completed my B.E. degree in Computer Science at the [Ho Chi Minh City University of Technology (HCMUT)](https://hcmut.edu.vn/en), Vietnam. 
+  I am a Ph.D. student in Computer Science at [Rutgers University](https://www.rutgers.edu), advised by Board of Governors Professor [Dimitris N. Metaxas](https://scholar.google.com/citations?hl=en&user=a7VNhCIAAAAJ&view_op=list_works&sortby=pubdate). Before that, I was a Research Resident at [VinAI](https://vinai.io) (later acquired by [Qualcomm AI Research](https://www.qualcomm.com/research/artificial-intelligence)) and received my B.E. in Computer Science from [Ho Chi Minh City University of Technology (HCMUT)](https://hcmut.edu.vn/en), Vietnam.
 
-  Email: quangngcs (at) gmail (dot) com
+  My research focuses on human-centric controllable generation, efficient generation, and alignment from multi-modal inputs.
+
+  Email: quang.ng (at) cs.rutgers (dot) edu
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://quang-ngh.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: QuangHo31460052
 github_username: quang-ngh
-google_scholar: dqgmViUAAAAJ
+google_scholar: SUuo7U4AAAAJ
 # google_analytics: G-MFWSBLRKG0
 
 # Build settings

@@ -1,0 +1,18 @@
+# Logos shown in order (university/companies). Add images to images/affiliations/
+# Suggested: PNG or SVG, ~120–160px wide; similar height for consistency.
+
+- name: Ho Chi Minh City University of Technology
+  url: https://hcmut.edu.vn/en
+  image: affiliations/hcmut.png
+
+- name: VinAI Research
+  url: https://vinai.io
+  image: affiliations/vinai.png
+
+- name: Qualcomm
+  url: https://www.qualcomm.com
+  image: affiliations/qualcomm.png
+
+- name: Rutgers University
+  url: https://www.rutgers.edu
+  image: affiliations/rutgers.png

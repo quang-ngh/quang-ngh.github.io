@@ -1,0 +1,14 @@
+# Venue key (must match first part of publication.venue before comma) -> brand color for tag
+# Keys are normalized from "Venue, Year" (e.g. "ICCV, 2025" -> ICCV)
+ICCV:
+  color: "#0066B3"
+  url: "https://iccv.thecvf.com/"
+CVPR:
+  color: "#00629B"
+  url: "https://cvpr.thecvf.com/"
+NeurIPS:
+  color: "#5D3C8B"
+  url: "https://neurips.cc/"
+"Scientific Reports (Q1)":
+  color: "#6b7280"
+  url: "https://www.nature.com/srep/"

@@ -1,11 +1,10 @@
-
 $(document).ready(function() {
-    $('.publication-mousecell').mouseover(function() {
-        $(this).find('video').css('display', 'inline-block');
-        $(this).find('img').css('display', 'none');
+    $('.pub-image-hover').mouseover(function() {
+        $(this).find('video').show();
+        $(this).find('img').hide();
     });
-    $('.publication-mousecell').mouseout(function() {
-        $(this).find('video').css('display', 'none');
-        $(this).find('img').css('display', 'inline-block');
+    $('.pub-image-hover').mouseout(function() {
+        $(this).find('video').hide();
+        $(this).find('img').show();
     });
-})
+});

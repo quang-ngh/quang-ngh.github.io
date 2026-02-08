@@ -3,103 +3,521 @@
 
 @import "base";
 
-.title {
-    font-family: 'Google Sans';
+// ---- Variables ----
+$bg: #ffffff;
+$text: #1c1c1e;
+$text-muted: #5c5c5e;
+$accent: #2563eb;
+$accent-light: #3b82f6;
+$card-bg: #ffffff;
+$border: #e8e6e3;
+$font-title: "Outfit", sans-serif;
+$font-body: "Source Sans 3", "Noto Sans", sans-serif;
+
+// ---- Base ----
+body {
+  font-family: $font-body;
+  background: $bg;
+  color: $text;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+a {
+  color: $accent;
+  text-decoration: none;
+  &:hover {
+    color: $accent-light;
+    text-decoration: underline;
+  }
+}
+
+.container.is-max-desktop {
+  max-width: 900px;
+}
+
+// ---- Navigation ----
+.site-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  padding: 1rem 0;
+  transition: background 0.2s ease, box-shadow 0.2s ease;
+  &.scrolled {
+    background: rgba($card-bg, 0.95);
+    box-shadow: 0 1px 0 $border;
+  }
+  .nav-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .nav-name {
+    font-family: $font-title;
     font-weight: 700;
+    font-size: 1.2rem;
+    color: $text;
+    &:hover {
+      color: $accent;
+      text-decoration: none;
+    }
+  }
+  .nav-links {
+    display: flex;
+    gap: 1.5rem;
+  }
+  .nav-link {
+    font-weight: 500;
+    color: $text-muted;
+    font-size: 0.95rem;
+    &:hover {
+      color: $accent;
+      text-decoration: none;
+    }
+  }
 }
 
-.portrait {
-    border-radius: 2%;
-    overflow: hidden;
-
-    img { transform: scale(1.2); }
+// ---- Hero ----
+.hero-section {
+  padding: 7rem 1.5rem 4rem;
+  min-height: 0;
+}
+.hero-portrait {
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+  aspect-ratio: 1;
+  img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: 30% 5%;
+  }
+}
+.hero-title {
+  font-family: $font-title;
+  font-weight: 700;
+  font-size: 2.25rem;
+  color: $text;
+  margin-bottom: 0.25rem;
+}
+.hero-subtitle {
+  font-size: 1.15rem;
+  color: $accent;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.hero-bio {
+  color: $text-muted;
+  margin-bottom: 1rem;
+  p { margin-bottom: 0.5rem; }
+}
+.hero-highlight {
+  color: $accent !important;
+  font-weight: 600;
+  margin-top: 0.5rem;
+}
+.hero-cta {
+  font-size: 0.95rem;
+  color: $text-muted;
+  margin-bottom: 1.25rem;
+}
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+  .icon { font-size: 0.9em; }
+  &.btn-primary {
+    background: $accent;
+    color: #fff !important;
+    &:hover {
+      background: $accent-light;
+      color: #fff !important;
+      text-decoration: none;
+    }
+  }
+  &.btn-outline {
+    background: transparent;
+    color: $text !important;
+    border: 2px solid $border;
+    &:hover {
+      border-color: $accent;
+      color: $accent !important;
+      text-decoration: none;
+    }
+  }
 }
 
-.footer .footer-links a {
-    font-size: 25px;
-    color: #000;
+// ---- Sections ----
+.section {
+  padding: 3.5rem 1.5rem;
+}
+.section-title {
+  font-family: $font-title;
+  font-weight: 700;
+  font-size: 1.75rem;
+  color: $text;
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid $accent;
+  display: inline-block;
+}
+.section-subtitle {
+  color: $text-muted;
+  font-size: 0.95rem;
+  margin-bottom: 2rem;
 }
 
-.publication-block {
-    .publication-title {
-        width: fit-content;
-        margin: 0 !important;
-        font-weight: 600;
-        font-size: 110% !important;
+// ---- Affiliations (logos) ----
+.section-affiliations {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  margin-top: 0;
+  background: $card-bg;
+}
+.affiliations-box {
+  background: $card-bg;
+  border-radius: 12px;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08), 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+.affiliations-logos {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem 1.25rem;
+}
+.affiliation-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 68px;
+  padding: 0 0.75rem;
+  transition: opacity 0.2s ease;
+  img {
+    max-height: 100%;
+    max-width: 170px;
+    width: auto;
+    object-fit: contain;
+  }
+  &:hover {
+    text-decoration: none;
+    opacity: 0.9;
+  }
+}
 
-        a { color: #000 }
-    }
+// ---- News (history timeline) ----
+.section-news {
+  background: linear-gradient(180deg, #eff6ff 0%, #ffffff 100%);
+}
+.news-section-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+.news-view-all {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: $accent;
+  &:hover {
+    color: $accent-light;
+    text-decoration: none;
+  }
+}
+.news-timeline {
+  margin-top: 2rem;
+  position: relative;
+  padding-left: 5rem;
+  &::before {
+    content: "";
+    position: absolute;
+    left: calc(5rem + 6px);
+    top: 0.5rem;
+    bottom: 0.5rem;
+    width: 2px;
+    background: linear-gradient(180deg, $accent 0%, rgba($accent, 0.25) 100%);
+    border-radius: 1px;
+  }
+}
+.news-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  margin-bottom: 1.25rem;
+  min-height: 4rem;
+  &:last-child { margin-bottom: 0; }
+}
+.news-marker {
+  position: absolute;
+  left: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 4.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.news-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: $accent;
+  flex-shrink: 0;
+  box-shadow: 0 0 0 3px rgba($accent, 0.2);
+}
+.news-date {
+  font-weight: 700;
+  color: $accent;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+}
+.news-content {
+  flex: 1;
+  min-width: 0;
+  margin-left: 5rem;
+  background: $card-bg;
+  padding: 1rem 1.25rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  border: 1px solid rgba($border, 0.8);
+  color: $text;
+  transition: box-shadow 0.2s ease;
+  &:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  }
+  p { margin: 0; }
+  a { color: $accent; }
+}
 
-    .publication-venue {
-        color: #555;
-        width: fit-content;
-        margin-top: 0;
-    }
+// ---- Publications ----
+.pub-block {
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid $border;
+  &:last-child { border-bottom: none; margin-bottom: 0; }
+}
+.pub-body { min-width: 0; }
+.pub-title-row {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.4rem;
+}
+.pub-title {
+  flex: 1 1 auto;
+  min-width: 0;
+  font-family: $font-title;
+  font-weight: 600;
+  font-size: 1.35rem;
+  margin: 0;
+  a { color: $text; }
+  a:hover { color: $accent; text-decoration: underline; }
+}
+.pub-venue-tag {
+  flex-shrink: 0;
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  border-radius: 4px;
+  background: var(--venue-color, #5c5c5e);
+  color: #fff !important;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+  &:hover {
+    opacity: 0.9;
+    color: #fff !important;
+    text-decoration: none;
+  }
+  &--default {
+    background: $text-muted;
+  }
+}
+.pub-authors {
+  font-size: 0.95rem;
+  color: $text-muted;
+  margin-bottom: 0.25rem;
+  .author-me { color: $text; font-weight: 600; }
+  a { color: $text-muted; }
+  a:hover { color: $accent; }
+}
+.pub-awards {
+  margin: 0 0 0.25rem 0;
+}
+.pub-award {
+  font-size: 0.85em;
+  color: #c45c3e;
+  font-weight: 500;
+}
+.pub-desc {
+  color: $text;
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+}
+.pub-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-size: 0.9rem;
+}
+.pub-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}
 
-    .publication-venue-emph {
-        font-style: normal;
-        font-size: 80%;
-        font-weight: 500;
-        color: firebrick;
-        padding-left: 0.25em;
-    }
+// ---- Background (history timeline) ----
+.section-bg {
+  background: linear-gradient(180deg, #eff6ff 0%, #ffffff 100%);
+}
+.subsection-title {
+  font-family: $font-title;
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: $text;
+  margin: 1.5rem 0 0.75rem;
+  &:first-of-type { margin-top: 0; }
+}
+.history-timeline {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  position: relative;
+  padding-left: 11rem;
+  &::before {
+    content: "";
+    position: absolute;
+    left: calc(11rem + 6px);
+    top: 0.5rem;
+    bottom: 0.5rem;
+    width: 2px;
+    background: linear-gradient(180deg, $accent 0%, rgba($accent, 0.25) 100%);
+    border-radius: 1px;
+  }
+}
+.history-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  margin-bottom: 1.25rem;
+  min-height: 4rem;
+  &:last-child { margin-bottom: 0; }
+}
+.history-marker {
+  position: absolute;
+  left: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 9.5rem;
+  max-width: 9.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  padding-right: 0.5rem;
+  box-sizing: border-box;
+}
+.history-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: $accent;
+  flex-shrink: 0;
+  box-shadow: 0 0 0 3px rgba($accent, 0.2);
+}
+.history-date {
+  font-weight: 700;
+  color: $accent;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-width: 0;
+}
+.history-content {
+  flex: 1;
+  min-width: 0;
+  margin-left: 11rem;
+  background: $card-bg;
+  padding: 1rem 1.25rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  border: 1px solid rgba($border, 0.8);
+  transition: box-shadow 0.2s ease;
+  &:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  }
+  strong { color: $text; }
+  .bg-location {
+    color: $text-muted;
+    font-size: 0.9rem;
+    margin-left: 0.5rem;
+  }
+  .content {
+    margin-top: 0.35rem;
+    color: $text-muted;
+    font-size: 0.95rem;
+    p { margin: 0; }
+  }
+}
 
-    .publication-awards {
-        color: firebrick;
-        width: fit-content;
-        font-weight: bolder;
-    }
+// ---- Footer ----
+.site-footer {
+  padding: 2rem 1.5rem;
+  background: $card-bg;
+  text-align: center;
+}
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 0.75rem;
+  a {
+    color: $text-muted;
+    font-size: 1.25rem;
+    &:hover { color: $accent; text-decoration: none; }
+  }
+}
+.footer-credit {
+  font-size: 0.85rem;
+  color: $text-muted;
+  margin: 0;
+}
 
-    .publication-authors {
-        .author-me {
-            color: #000;
-            font-weight: 600;
-        }
-
-        a {
-            color: #000 !important;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-    }
-
-    .publication-image {
-        border-radius: 2%;
-        width: 100%;
-        height: 100%;
-        overflow: hidden;
-        font-size: 0;
-
-        img {
-            width: 100%;
-        }
-    }
-
-    .publication-mousecell {
-        position: relative;
-        font-size: 0;
-    }
-
-    .publication-mousecell {
-        width: 100%;
-        height: 100%;
-        display: inline-block;
-        overflow: hidden;
-
-        video {
-            display: none;
-        }
-    }
-
-    .publication-description {
-        color: #333;
-        margin: 0.5em 0;
-    }
-
-    .publication-links {
-        margin: 0 !important;
-        margin-top: 0.5em !important;
-    }
+// ---- Responsive ----
+@media screen and (max-width: 768px) {
+  .hero-section { padding-top: 5.5rem; }
+  .nav-links { gap: 1rem; }
+  .news-timeline { padding-left: 4rem; }
+  .news-timeline::before { left: calc(4rem + 6px); }
+  .news-content { margin-left: 3.5rem; }
+  .news-marker { width: 3.5rem; }
+  .history-timeline { padding-left: 8rem; }
+  .history-timeline::before { left: calc(8rem + 6px); }
+  .history-content { margin-left: 8rem; }
+  .history-marker { width: 7.5rem; max-width: 7.5rem; }
 }

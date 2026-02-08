@@ -57,3 +57,12 @@ tungnguyen:
 ngannguyen:
   first_name: Hoai Ngan
   last_name: Nguyen
+
+quangbinhnguyen:
+  first_name: Quang-Binh
+  last_name: Nguyen
+  website: https://nqbinhcs.github.io/
+
+minhluu:
+  first_name: Minh
+  last_name: Luu

@@ -35,3 +35,6 @@ gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
 gem "webrick", "~> 1.7"
 
 gem "faraday-retry", "~> 2.2"
+
+# Explicit dependency for Ruby 3.4+ (safe_yaml and others load base64 from stdlib)
+gem "base64"

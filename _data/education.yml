@@ -1,4 +1,11 @@
+- name: Rutgers University
+  description: >-
+    Ph.D. student in Computer Science.
+  dates: "09/2025 - Present"
+  location: New Brunswick, USA
+
 - name: Ho Chi Minh City University of Technology
   description: >-
     B.E. in Computer Science.
-  dates: Fall 2020 - Spring 2024
+  dates: "09/2020 - 10/2024"
+  location: HCMC, Vietnam

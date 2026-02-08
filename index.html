@@ -6,26 +6,22 @@ layout: null
 
 <head>
   <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
-
   <meta content="width=device-width, initial-scale=1" name="viewport">
-  <title>{{ site.name }}</title>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <title>{{ site.name }} — {{ site.position }}</title>
+  {% if site.google_analytics %}
   <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-
+    function gtag(){ dataLayer.push(arguments); }
     gtag('js', new Date());
-
     gtag('config', '{{ site.google_analytics }}');
   </script>
+  {% endif %}
 
   <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-
-  <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@700&family=Noto+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
   <link href="{{ '/css/fontawesome.all.min.css' | relative_url }}" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" rel="stylesheet">
   <link href="{{ '/css/bulma.min.css' | relative_url }}" rel="stylesheet">
@@ -37,212 +33,237 @@ layout: null
 </head>
 
 <body>
+  <!-- Sticky navigation -->
+  <nav class="site-nav" id="site-nav">
+    <div class="container is-max-desktop">
+      <div class="nav-inner">
+        <a class="nav-name" href="#hero">{{ site.name }}</a>
+        <div class="nav-links">
+          <a class="nav-link" href="#news">News</a>
+          <a class="nav-link" href="#publications">Publications</a>
+          <a class="nav-link" href="#background">Background</a>
+        </div>
+      </div>
+    </div>
+  </nav>
 
-  <section class="hero">
-    <div class="hero-body container is-max-desktop">
+  <!-- Hero (bio only) -->
+  <section class="hero-section" id="hero">
+    <div class="container is-max-desktop">
       <div class="columns is-vcentered">
-
         <div class="column is-4">
-          <div class="portrait">
-            <img src="{{ '/images/profile_img.jpg' | relative_url }}" />
+          <div class="hero-portrait">
+            <img src="{{ '/images/portrait2.jpg' | relative_url }}" alt="{{ site.name }}" />
           </div>
         </div>
-
         <div class="column">
-          <h1 class="title">
-            <b>Hello, I'm {{ site.name }}</b>
-          </h1>
-          <div class="content has-text-justified">
+          <h1 class="hero-title">{{ site.name }}</h1>
+          <p class="hero-subtitle">{{ site.position }}</p>
+          <div class="hero-bio content">
             {{ site.description | markdownify }}
-            <p style="color:red"><b>I am actively looking for PhD position in Fall 2025</b></p>
-            <div class="buttons">
-              <a class="external-link button is-light" href="assets/CV.pdf">
-                <span class="icon"><i class="fas fa-file"></i></span>
-                <span>CV</span>
-              </a>
-
-              <a class="external-link button is-light"
-                href="https://scholar.google.com/citations?user={{ site.google_scholar }}">
-                <span class="icon"><i class="ai ai-google-scholar"></i></span>
-                <span>Scholar</span>
-              </a>
-
-              <a class="external-link button is-light" href="https://github.com/{{ site.github_username }}">
-                <span class="icon"><i class="fab fa-github"></i></span>
-                <span>Github</span>
-              </a>
-
-              <a class="external-link button is-light" href="https://twitter.com/{{ site.twitter_username }}">
-                <span class="icon"><i class="fab fa-twitter"></i></span>
-                <span>Twitter</span>
-              </a>
-            </div>
-
+          </div>
+          <p class="hero-cta">💡 For collaborations or discussions, feel free to reach out.</p>
+          <div class="hero-buttons">
+            <a class="btn btn-outline" href="mailto:{{ site.email }}" aria-label="Email">
+              <span class="icon"><i class="fas fa-envelope"></i></span>
+              <span>Email</span>
+            </a>
+            <a class="btn btn-primary" href="assets/CV.pdf">
+              <span class="icon"><i class="fas fa-file-pdf"></i></span>
+              <span>CV</span>
+            </a>
+            <a class="btn btn-outline" href="https://scholar.google.com/citations?user={{ site.google_scholar }}">
+              <span class="icon"><i class="ai ai-google-scholar"></i></span>
+              <span>Scholar</span>
+            </a>
+            <a class="btn btn-outline" href="https://github.com/{{ site.github_username }}">
+              <span class="icon"><i class="fab fa-github"></i></span>
+              <span>GitHub</span>
+            </a>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- News. -->
-  <div class="hr">
-    <div class="container">
-      <hr>
-    </div>
-  </div>
-
-  <section class="section">
+  <!-- Affiliations (separate section, not inside hero/bio) -->
+  <section class="section section-affiliations" id="affiliations">
     <div class="container is-max-desktop">
-
-      <h2 class="title is-3">News</h2>
-      <div class="content">
-        <ul>
-          {% for news in site.data.news %}
-          <li>
-            <b>{{ news.date }}</b>: {{ news.description | markdownify | remove: '<p>' | remove: '</p>' }}
-          </li>
-          {% endfor %}
-        </ul>
+      <div class="affiliations-box">
+      <div class="affiliations-logos">
+        {% for aff in site.data.affiliations %}
+        <a class="affiliation-item" href="{{ aff.url }}" target="_blank" rel="noopener" title="{{ aff.name }}">
+          <img src="{{ '/images/' | append: aff.image | relative_url }}" alt="{{ aff.name }}" />
+        </a>
+        {% endfor %}
       </div>
+      </div>
+    </div>
+  </section>
 
-      <h2 class="title is-3">Publications</h2>
+  <!-- News (history timeline) - selected only -->
+  <section class="section section-news" id="news">
+    <div class="container is-max-desktop">
+      <div class="news-section-header">
+        <h2 class="section-title">News</h2>
+        <a class="news-view-all" href="{{ '/news.html' | relative_url }}">View All News →</a>
+      </div>
+      <div class="news-timeline">
+        {% assign featured_news = site.data.news | where: "featured", true %}
+        {% for news in featured_news %}
+        <div class="news-item">
+          <div class="news-marker">
+            <span class="news-dot" aria-hidden="true"></span>
+            <span class="news-date">{{ news.date }}</span>
+          </div>
+          <div class="news-content">
+            {{ news.description | markdownify }}
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <!-- Publications -->
+  <section class="section section-pubs" id="publications">
+    <div class="container is-max-desktop">
+      <h2 class="section-title">Selected Publications</h2>
+      <p class="section-subtitle">See <a href="https://scholar.google.com/citations?user={{ site.google_scholar }}">Google Scholar</a> for the full list.</p>
 
       {% for publication in site.data.publications %}
-      <div class="publication-block columns">
-
-        <div class="column is-2">
-          <div class="publication-image {% if publication.image_mouseover %}publication-mousecell{% endif %}">
-            {% if publication.image_mouseover contains "mp4" %}
-            <video autoplay preload playsinline class="" height="100%" loop muted width="100%">
-              <source src="./images/{{ publication.image_mouseover }}" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
-            {% endif %}
-            <img alt="{{ publication.title }}" src="./images/{{ publication.image }}" />
-          </div>
-        </div>
-
-        <div class="column">
-          <div class="content">
-            <h3 class="publication-title"><a href="{{ publication.project_page }}">{{ publication.title }}</a></h3>
-            <div class="publication-authors">
-              <!-- {% for author_id in publication.authors %}
-              {% assign author = site.data.authors[author_id] %}
-              <span class="author-block {% if author.is_me %}author-me{% endif %}">
-                {% if author.is_me %}
-                {{ author.first_name }} {{author.middle_name}} {{ author.last_name }}{% if forloop.last == false %},{%
-                endif %}
-                {% else %}
-                <a href="{{ author.website }}">{{ author.first_name }} {{ author.middle_name }} {{ author.last_name
-                  }}</a>{% if forloop.last == false %},{% endif %}
-                {% endif %}
-              </span>
-              {% endfor %} -->
-              {% for author_id in publication.first_authors %}
-              {% assign author = site.data.authors[author_id] %}
-              <span class="author-block {% if author.is_me %}author-me{% endif %}">
-                {% if author.is_me %}
-                {{ author.first_name }} {{author.middle_name}} {{ author.last_name }}*,
-                {% else %}
-                <a href="{{ author.website }}">{{ author.first_name }} {{ author.middle_name }} {{ author.last_name
-                  }}*</a>,
-                {% endif %}
-              </span>
-              {% endfor %}
-              {% for author_id in publication.authors %}
-              {% assign author = site.data.authors[author_id] %}
-              <span class="author-block {% if author.is_me %}author-me{% endif %}">
-                {% if author.is_me %}
-                {{ author.first_name }} {{author.middle_name}} {{ author.last_name }}{% if forloop.last == false %},{%
-                endif %}
-                {% else %}
-                <a href="{{ author.website }}">{{ author.first_name }} {{ author.middle_name }} {{ author.last_name
-                  }}</a>{% if forloop.last == false %},{% endif %}
-                {% endif %}
-              </span>
-              {% endfor %}
-            </div>
-            <div class="publication-venue">
-              <span>{{ publication.venue }}</span>
-              {% for award in publication.awards %}
-                <span class="publication-venue-emph">{{ award }}<span>
-              {% endfor %}
-            </div>
-            <p class="publication-description">{{ publication.description }}</p>
-            <!-- Publication Links. -->
-            <div class="publication-links buttons field has-addons">
+      <article class="pub-block">
+        <div class="pub-body">
+          <div class="pub-title-row">
+            <h3 class="pub-title">
               {% if publication.project_page %}
-              <a class="external-link button is-small is-ghost" href="{{ publication.project_page }}">
-                <span class="icon"><i class="fas fa-globe-asia"></i></span>
-                <span>Project Page</span>
-              </a>
+                <a href="{{ publication.project_page }}">{{ publication.title }}</a>
+              {% else %}
+                {{ publication.title }}
               {% endif %}
-              {% if publication.open_access %}
-              <a class="external-link button is-small is-ghost" href="{{publication.open_access}}">
-                <span class="icon"><i class="fas fa-file-pdf"></i></span>
-                <span>PDF</span>
-              </a>
-              {% endif %}
-              {% if publication.arxiv %}
-              <a class="external-link button is-small is-ghost" href="https://arxiv.org/pdf/{{ publication.arxiv }}.pdf">
-                <span class="icon"><i class="fas fa-file-pdf"></i></span>
-                <span>PDF</span>
-              </a>
-              {% endif %}
-              {% if publication.arxiv %}
-              <a class="external-link button is-small is-ghost" href="https://arxiv.org/abs/{{ publication.arxiv }}">
-                <span class="icon"><i class="ai ai-arxiv"></i></span>
-                <span>arXiv</span>
-              </a>
-              {% endif %}
-              {% if publication.github %}
-              <a class="external-link button is-small is-ghost" href="https://github.com/{{ publication.github }}">
-                <span class="icon"><i class="fa fab fa-github"></i></span>
-                <span>Code</span>
-              </a>
-              {% endif %}
-              {% if publication.video %}
-              <a class="external-link button is-small is-ghost" href="{{ publication.video }}">
-                <span class="icon"><i class="fa fab fa-youtube-square"></i></span>
-                <span>Video</span>
-              </a>
-              {% endif %}
-            </div>
-            <!--/ Publication Links. -->
+            </h3>
+            {% assign venue_key_raw = publication.venue | split: ", " | first %}
+            {% assign venue_key = venue_key_raw | split: "'" | first | strip %}
+            {% assign venue_data = site.data.venues[venue_key] %}
+            {% if venue_data %}
+            <a class="pub-venue-tag" href="{{ venue_data.url }}" target="_blank" rel="noopener" style="background-color: {{ venue_data.color }};">{{ publication.venue }}</a>
+            {% else %}
+            <span class="pub-venue-tag pub-venue-tag--default">{{ publication.venue }}</span>
+            {% endif %}
+          </div>
+          <div class="pub-authors">
+            {% if publication.first_authors %}
+            {% for author_id in publication.first_authors %}
+              {% assign author = site.data.authors[author_id] %}
+              <span class="author {% if author.is_me %}author-me{% endif %}">
+                {% if author.website %}<a href="{{ author.website }}">{% endif %}{{ author.first_name }} {{ author.last_name }}{% if author.is_me %}*{% endif %}{% if author.website %}</a>{% endif %},
+              </span>
+            {% endfor %}
+            {% endif %}
+            {% for author_id in publication.authors %}
+              {% assign author = site.data.authors[author_id] %}
+              <span class="author {% if author.is_me %}author-me{% endif %}">
+                {% if author.website %}<a href="{{ author.website }}">{% endif %}{{ author.first_name }} {{ author.last_name }}{% if author.website %}</a>{% endif %}{% unless forloop.last %}, {% endunless %}
+              </span>
+            {% endfor %}
+          </div>
+          {% for award in publication.awards %}
+          <p class="pub-awards"><span class="pub-award">{{ award }}</span></p>
+          {% endfor %}
+          <p class="pub-desc">{{ publication.description }}</p>
+          <div class="pub-links">
+            {% if publication.project_page %}
+            <a class="pub-link" href="{{ publication.project_page }}"><i class="fas fa-globe"></i> Project</a>
+            {% endif %}
+            {% if publication.open_access %}
+            <a class="pub-link" href="{{ publication.open_access }}"><i class="fas fa-file-pdf"></i> PDF</a>
+            {% endif %}
+            {% if publication.arxiv %}
+            <a class="pub-link" href="https://arxiv.org/pdf/{{ publication.arxiv }}.pdf"><i class="fas fa-file-pdf"></i> PDF</a>
+            <a class="pub-link" href="https://arxiv.org/abs/{{ publication.arxiv }}"><i class="ai ai-arxiv"></i> arXiv</a>
+            {% endif %}
+            {% if publication.github %}
+            <a class="pub-link" href="https://github.com/{{ publication.github }}"><i class="fab fa-github"></i> Code</a>
+            {% endif %}
+            {% if publication.video %}
+            <a class="pub-link" href="{{ publication.video }}"><i class="fab fa-youtube"></i> Video</a>
+            {% endif %}
           </div>
         </div>
-      </div>
+      </article>
       {% endfor %}
     </div>
   </section>
 
+  <!-- Background (Experience + Education) - history timeline -->
+  <section class="section section-bg" id="background">
+    <div class="container is-max-desktop">
+      <h2 class="section-title">Background</h2>
 
-  <footer class="footer">
-    <div class="container">
-      <div class="content footer-links has-text-centered">
-        <a href="mailto:{{ site.email }}">
-          <i class="fas fa-envelope"></i>
-        </a>
-        <a class="external-link" href="https://github.com/{{ site.github_username }}">
-          <i class="fab fa-github"></i>
-        </a>
-        <a class="external-link" href="https://scholar.google.com/citations?user={{ site.google_scholar }}">
-          <i class="ai ai-google-scholar"></i>
-        </a>
-      </div>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-8">
-          <div class="content">
-            <p>
-              Feel free to <a href="https://github.com/ngoductuanlhp/ngoductuanlhp.github.io">borrow this template</a>.
-            </p>
+      <h3 class="subsection-title">Experience</h3>
+      <div class="history-timeline">
+        {% for job in site.data.employment %}
+        <div class="history-item">
+          <div class="history-marker">
+            <span class="history-dot" aria-hidden="true"></span>
+            <span class="history-date">{{ job.dates }}</span>
+          </div>
+          <div class="history-content">
+            <strong>{{ job.company }}</strong>
+            <span class="bg-location">{{ job.location }}</span>
+            <div class="content">{{ job.description | markdownify }}</div>
           </div>
         </div>
+        {% endfor %}
+      </div>
+
+      <h3 class="subsection-title">Education</h3>
+      <div class="history-timeline">
+        {% for edu in site.data.education %}
+        <div class="history-item">
+          <div class="history-marker">
+            <span class="history-dot" aria-hidden="true"></span>
+            <span class="history-date">{{ edu.dates }}</span>
+          </div>
+          <div class="history-content">
+            <strong>{{ edu.name }}</strong>
+            {% if edu.location %}<span class="bg-location">{{ edu.location }}</span>{% endif %}
+            <div class="content">{{ edu.description | markdownify }}</div>
+          </div>
+        </div>
+        {% endfor %}
       </div>
     </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container is-max-desktop">
+      <div class="footer-links">
+        <a href="mailto:{{ site.email }}" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        <a href="https://github.com/{{ site.github_username }}" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://scholar.google.com/citations?user={{ site.google_scholar }}" aria-label="Google Scholar"><i class="ai ai-google-scholar"></i></a>
+      </div>
+      <p class="footer-credit">Last updated {{ 'now' | date: "%b %Y" }} · Powered by Jekyll</p>
+    </div>
   </footer>
-  <a href="http://www.clustrmaps.com/map/Quang-ngh.github.io" title="Visit tracker for Quang-ngh.github.io"><img src="//www.clustrmaps.com/map_v2.png?d=ySLtGY5dBNLXpRFtcZqWO9JPD15BH8BjVu0yxvhbU3o" /></a>
-  <!-- <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=ySLtGY5dBNLXpRFtcZqWO9JPD15BH8BjVu0yxvhbU3o&cl=ffffff&w=a"></script> -->
+
+  <script>
+    // Smooth scroll for nav links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    });
+    // Nav background on scroll
+    const nav = document.getElementById('site-nav');
+    if (nav) {
+      window.addEventListener('scroll', function() {
+        nav.classList.toggle('scrolled', window.scrollY > 50);
+      });
+    }
+  </script>
 </body>
 
 </html>
