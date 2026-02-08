@@ -146,7 +146,11 @@ layout: null
             {% assign venue_key = venue_key_raw | split: "'" | first | strip %}
             {% assign venue_data = site.data.venues[venue_key] %}
             {% if venue_data %}
+            {% if venue_data.color2 %}
+            <a class="pub-venue-tag" href="{{ venue_data.url }}" target="_blank" rel="noopener" style="background: linear-gradient(135deg, {{ venue_data.color }}, {{ venue_data.color2 }});">{{ publication.venue }}</a>
+            {% else %}
             <a class="pub-venue-tag" href="{{ venue_data.url }}" target="_blank" rel="noopener" style="background-color: {{ venue_data.color }};">{{ publication.venue }}</a>
+            {% endif %}
             {% else %}
             <span class="pub-venue-tag pub-venue-tag--default">{{ publication.venue }}</span>
             {% endif %}

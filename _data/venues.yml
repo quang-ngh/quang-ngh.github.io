@@ -1,5 +1,5 @@
-# Venue key (must match first part of publication.venue before comma) -> brand color for tag
-# Keys are normalized from "Venue, Year" (e.g. "ICCV, 2025" -> ICCV)
+# Venue key (must match first part of publication.venue before comma) -> brand color(s) for tag
+# Use "color" only for solid; add "color2" for a gradient (e.g. logo with two colors)
 ICCV:
   color: "#0066B3"
   url: "https://iccv.thecvf.com/"
@@ -8,6 +8,7 @@ CVPR:
   url: "https://cvpr.thecvf.com/"
 NeurIPS:
   color: "#5D3C8B"
+  color2: "#8F55C9"
   url: "https://neurips.cc/"
 "Scientific Reports (Q1)":
   color: "#6b7280"
