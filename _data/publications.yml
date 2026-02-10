@@ -1,13 +1,46 @@
+- id: DeDPO
+  title: "DeDPO: Debiased Direct Preference Optimization for Diffusion Models"
+  venue: Preprint
+  description: "Semi-supervised alignment for diffusion models using debiased estimation with synthetic AI feedback; matches or exceeds fully human-labeled training."
+  arxiv: 2602.06195
+  project_page: "https://arxiv.org/abs/2602.06195"
+  first_authors:
+    - khiempham
+    - quangnguyen
+    - tungnguyen_gg
+  authors: 
+    - jingsenzhu
+    - michelesantacatterina
+    - dimitrismetaxas
+    - raminzabih
+
+- id: Re-MeanFlow
+  title: "Flow Straighter and Faster: Efficient One-Step Generative Modeling via MeanFlow on Rectified Trajectories"
+  venue: Preprint
+  description: "Rectified MeanFlow achieves one-step flow generation with a single reflow step; outperforms prior one-step flow distillation and Rectified Flow on ImageNet at 64, 256, and 512 resolutions."
+  arxiv: 2511.23342
+  project_page: "https://arxiv.org/abs/2511.23342"
+  first_authors:
+    - xinxizhang
+    - shiweitan
+  authors:
+    - quangnguyen
+    - quandao
+    - ligonghan
+    - xiaoxiaohe
+    - tunyuzhang
+    - alenmrdovic
+    - dimitrismetaxas
+
 - id: CSD-VAR
   title: "CSD-VAR: Content-Style Decomposition in Visual Autoregressive Models"
   venue: ICCV'25
   description: "Disentangling content and style from single images via visual autoregressive modeling for improved recontextualization and stylization."
   project_page: "https://nqbinhcs.github.io/csd-var-page/"
-  arxiv: 2507.13984
-  first_authors:
+  arxiv: 2507.13984 
+  authors:
     - quangbinhnguyen
     - minhluu
-  authors:
     - quangnguyen
     - anhtran
     - khoinguyen
@@ -44,26 +77,26 @@
     - anhtran
     - khoinguyen
 
-- id: BeCaked
-  title: "BeCaked: An Explainable Artificial Intelligence Model for COVID-19 Forecasting"
-  venue: Scientific Reports'22
-  description: "Integrating the SIRD compartmental model into a Variational Autoencoder (VAE) framework, this approach enhances pandemic forecasting by combining accurate predictions with improved explainability"
-  # project_page: "https://dataset-diffusion.github.io/"
-  # github: VinAIResearch/Dataset-Diffusion
-  # arxiv: 2309.14303
-  image: becaked.webp
-  # image_mouseover: isbnet_demo.jpg
-  # first_authors:
-  #   - quangnguyen
-  #   - truongvu
-  authors:  
-    - ducnguyen
-    - nghiavo
-    - thinhnguyen
-    - khuongnuyen
-    - quangnguyen
-    - dangtran
-    - thoquan
+# - id: BeCaked
+#   title: "BeCaked: An Explainable Artificial Intelligence Model for COVID-19 Forecasting"
+#   venue: Scientific Reports'22
+#   description: "Integrating the SIRD compartmental model into a Variational Autoencoder (VAE) framework, this approach enhances pandemic forecasting by combining accurate predictions with improved explainability"
+#   # project_page: "https://dataset-diffusion.github.io/"
+#   # github: VinAIResearch/Dataset-Diffusion
+#   # arxiv: 2309.14303
+#   image: becaked.webp
+#   # image_mouseover: isbnet_demo.jpg
+#   # first_authors:
+#   #   - quangnguyen
+#   #   - truongvu
+#   authors:  
+#     - ducnguyen
+#     - nghiavo
+#     - thinhnguyen
+#     - khuongnuyen
+#     - quangnguyen
+#     - dangtran
+#     - thoquan
 
 # - id: uplift
 #   title: "UPLIFT: Uplifting Image Quality to Breathe New Life into Generated Visuals"

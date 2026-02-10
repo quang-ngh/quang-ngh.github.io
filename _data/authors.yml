@@ -4,11 +4,17 @@ quangnguyen:
   website: https://quang-ngh.github.io/
   is_me: true
 
+tungnguyen_gg:
+  first_name: Tung
+  last_name: Nguyen
+  website: https://www.tungdnguyen.com/
+  is_me: False
+
 truongvu:
   first_name: Truong
   last_name: Vu
   website: https://truongvu2000nd.github.io/
-  is_me: true
+  is_me: False
 
 khoinguyen:
   first_name: Khoi
@@ -66,3 +72,52 @@ quangbinhnguyen:
 minhluu:
   first_name: Minh
   last_name: Luu
+
+khiempham:
+  first_name: Khiem
+  last_name: Pham
+
+jingsenzhu:
+  first_name: Jingsen
+  last_name: Zhu
+
+michelesantacatterina:
+  first_name: Michele
+  last_name: Santacatterina
+
+dimitrismetaxas:
+  first_name: Dimitris
+  last_name: Metaxas
+  website: https://scholar.google.com/citations?user=a7VNhCIAAAAJ&hl=en
+
+raminzabih:
+  first_name: Ramin
+  last_name: Zabih
+
+xinxizhang:
+  first_name: Xinxi
+  last_name: Zhang
+
+shiweitan:
+  first_name: Shiwei
+  last_name: Tan
+
+quandao:
+  first_name: Quan
+  last_name: Dao
+
+ligonghan:
+  first_name: Ligong
+  last_name: Han
+
+xiaoxiaohe:
+  first_name: Xiaoxiao
+  last_name: He
+
+tunyuzhang:
+  first_name: Tunyu
+  last_name: Zhang
+
+alenmrdovic:
+  first_name: Alen
+  last_name: Mrdovic

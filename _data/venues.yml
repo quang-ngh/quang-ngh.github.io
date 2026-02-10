@@ -13,3 +13,6 @@ NeurIPS:
 "Scientific Reports (Q1)":
   color: "#6b7280"
   url: "https://www.nature.com/srep/"
+Preprint:
+  color: "#9ca3af"
+  url: "https://arxiv.org/"

@@ -149,42 +149,38 @@ layout: null
               {% assign c1 = venue_data.color | strip | remove: '"' %}
               {% if venue_data.color2 %}
                 {% assign c2 = venue_data.color2 | strip | remove: '"' %}
-                {% comment %}
-                  Render the venue tag with the correct color(s) if available.
-                  Linear gradient if both c1 and c2, otherwise solid color with c1.
-                {% endcomment %}
-                {% if venue_data.color2 %}
-                  <a class="pub-venue-tag"
-                     href="{{ venue_data.url }}"
-                     target="_blank" rel="noopener"
-                     style="background: linear-gradient(135deg, {{ c1 }}, {{ c2 }});">
-                    {{ publication.venue }}
-                  </a>
-                {% else %}
-                  <a class="pub-venue-tag"
-                     href="{{ venue_data.url }}"
-                     target="_blank" rel="noopener"
-                     style="background-color: {{ c1 }};">
-                    {{ publication.venue }}
-                  </a>
-                {% endif %}
-                {% else %}
-                  <span class="pub-venue-tag pub-venue-tag--default">{{ publication.venue }}</span>
-                {% endif %}
+                <a class="pub-venue-tag"
+                   href="{{ venue_data.url }}"
+                   target="_blank" rel="noopener"
+                   style="background: linear-gradient(135deg, {{ c1 }}, {{ c2 }});">
+                  {{ publication.venue }}
+                </a>
+              {% else %}
+                <a class="pub-venue-tag"
+                   href="{{ venue_data.url }}"
+                   target="_blank" rel="noopener"
+                   style="background-color: {{ c1 }};">
+                  {{ publication.venue }}
+                </a>
+              {% endif %}
+            {% else %}
+              <span class="pub-venue-tag pub-venue-tag--default">{{ publication.venue }}</span>
+            {% endif %}
           </div>
           <div class="pub-authors">
             {% if publication.first_authors %}
+            {% assign show_first_asterisk = publication.first_authors.size >= 2 %}
             {% for author_id in publication.first_authors %}
               {% assign author = site.data.authors[author_id] %}
               <span class="author {% if author.is_me %}author-me{% endif %}">
-                {% if author.website %}<a href="{{ author.website }}">{% endif %}{{ author.first_name }} {{ author.last_name }}{% if author.is_me %}*{% endif %}{% if author.website %}</a>{% endif %},
+                {% if author.website %}<a href="{{ author.website }}">{% endif %}{{ author.first_name }} {{ author.last_name }}{% if show_first_asterisk %}*{% endif %}{% if author.website %}</a>{% endif %},
               </span>
             {% endfor %}
             {% endif %}
             {% for author_id in publication.authors %}
               {% assign author = site.data.authors[author_id] %}
               <span class="author {% if author.is_me %}author-me{% endif %}">
-                {% if author.website %}<a href="{{ author.website }}">{% endif %}{{ author.first_name }} {{ author.last_name }}{% if author.website %}</a>{% endif %}{% unless forloop.last %}, {% endunless %}
+                {% if author.website %}<a href="{{ author.website }}">{% endif %}{{ author.first_name }} {{ author.last_name }}{% if publication.first_authors contains author_id and publication.first_authors.size >= 2 %}*{% endif %}{% if author.website %}</a>{% endif %}{% unless forloop.last %}, {% endunless %}
               </span>
             {% endfor %}
           </div>
